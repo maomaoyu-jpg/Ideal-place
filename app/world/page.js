@@ -1,114 +1,84 @@
 import Link from "next/link";
 
 const records = [
-  {
-    number: "01",
-    title: "WORLD",
-    zh: "世界概述",
-    href: "/world/overview",
-  },
-  {
-    number: "02",
-    title: "WINGED",
-    zh: "有翼族",
-    href: "/world/winged",
-  },
-  {
-    number: "03",
-    title: "SOCIETY",
-    zh: "階級與制度",
-    href: "/world/society",
-  },
-  {
-    number: "04",
-    title: "FAITH",
-    zh: "信仰",
-    href: "/world/faith",
-  },
-  {
-    number: "05",
-    title: "EDUCATION",
-    zh: "思想教育",
-    href: "/world/education",
-  },
-  {
-    number: "06",
-    title: "TREE OF KNOWLEDGE",
-    zh: "善惡樹計畫",
-    href: "/world/tree",
-  },
-  {
-    number: "07",
-    title: "ANGEL ARMY",
-    zh: "天使軍",
-    href: "/world/army",
-  },
-  {
-    number: "08",
-    title: "WAR",
-    zh: "戰爭",
-    href: "/world/war",
-  },
+  { n: "01", en: "WORLD", zh: "世界概述", href: "/world/overview", cls: "record-a" },
+  { n: "02", en: "WINGED", zh: "有翼族", href: "/world/winged", cls: "record-b" },
+  { n: "03", en: "SOCIETY", zh: "階級與制度", href: "/world/society", cls: "record-c" },
+  { n: "04", en: "FAITH", zh: "信仰", href: "/world/faith", cls: "record-d" },
+  { n: "05", en: "EDUCATION", zh: "思想教育", href: "/world/education", cls: "record-e" },
+  { n: "06", en: "TREE\nOF KNOWLEDGE", zh: "善惡樹計畫", href: "/world/tree", cls: "record-f" },
+  { n: "07", en: "ANGEL ARMY", zh: "天使軍", href: "/world/army", cls: "record-g" },
+  { n: "08", en: "WAR", zh: "戰爭", href: "/world/war", cls: "record-h" },
 ];
 
 export default function World() {
   return (
-    <main className="world-page">
-      <section className="world-hero">
-        <div className="archive-number">
-          IP / 01 — PUBLIC RECORD
+    <main className="world-editorial">
+      <section className="world-cover">
+        <div className="world-meta">
+          <span>IP / 01</span>
+          <span>PUBLIC RECORD</span>
         </div>
 
-        <div className="world-heading">
-          <div>
-            <div className="section-label">ARCHIVE / WORLD</div>
+        <div className="world-cover-art" aria-hidden="true">
+          <span className="world-ring ring-large"></span>
+          <span className="world-ring ring-small"></span>
+          <span className="world-axis"></span>
+          <span className="world-point"></span>
+        </div>
 
-            <h1>
-              WORLD
-            </h1>
+        <div className="world-title-block">
+          <span className="world-kicker">ARCHIVE / WORLD</span>
+
+          <h1>WORLD</h1>
+
+          <div className="world-title-bottom">
+            <strong>理想國</strong>
+            <span>THE IDEAL PLACE</span>
           </div>
-
-          <p className="world-intro">
-            理想國
-            <br />
-            世界與其秩序的公開紀錄。
-          </p>
         </div>
 
-        <div className="world-orbit" aria-hidden="true">
-          <span className="orbit orbit-one"></span>
-          <span className="orbit orbit-two"></span>
-          <span className="orbit-dot"></span>
-          <span className="orbit-line"></span>
-        </div>
+        <p className="world-cover-note">
+          世界與其秩序的公開紀錄。
+          <br />
+          08 RECORDS / PUBLIC ACCESS
+        </p>
       </section>
 
-      <section className="world-records">
-        <div className="records-header">
-          <span>INDEX</span>
-          <span>PUBLIC ACCESS</span>
-          <span>08 RECORDS</span>
+      <section className="editorial-index">
+        <div className="index-axis" aria-hidden="true">
+          <span></span>
         </div>
 
         {records.map((record) => (
           <Link
-            className="record-row"
             href={record.href}
-            key={record.number}
+            className={`editorial-record ${record.cls}`}
+            key={record.n}
           >
-            <span className="record-number">
-              {record.number}
+            <span className="editorial-number">{record.n}</span>
+
+            <span className="editorial-title">
+              {record.en.split("\n").map((line, index) => (
+                <span key={index}>{line}</span>
+              ))}
             </span>
 
-            <span className="record-title">
-              {record.title}
-            </span>
-
-            <span className="record-zh">
-              {record.zh}
-            </span>
+            <span className="editorial-zh">{record.zh}</span>
           </Link>
         ))}
+
+        <div className="index-caption caption-one">
+          IDEAL PLACE
+          <br />
+          ARCHIVE SYSTEM
+        </div>
+
+        <div className="index-caption caption-two">
+          01—08
+          <br />
+          WORLD RECORDS
+        </div>
       </section>
     </main>
   );
