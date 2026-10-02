@@ -546,16 +546,15 @@ a {
   */
 
   background: linear-gradient(
-    to bottom,
-    #f2f1ed 0%,
-    #f2f1ed 20%,
-    #e8e7e3 36%,
-    #d3d2ce 52%,
-    #aaa9a5 68%,
-    #777775 82%,
-    #515150 92%,
-    #343433 100%
-  );
+  to bottom,
+  #f2f1ed 0%,
+  #f2f1ed 66%,
+  #e7e6e2 72%,
+  #c4c3bf 79%,
+  #92918e 86%,
+  #5e5e5c 93%,
+  #343433 100%
+);
 }
 
 
