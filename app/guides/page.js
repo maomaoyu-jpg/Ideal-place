@@ -67,7 +67,7 @@ export default function Guides() {
           <h1>GUIDES</h1>
 
           <div className="guides-heading-bottom">
-            <strong>嚮導</strong>
+            <strong>「嚮導」</strong>
             <span>PERSONAL RECORDS</span>
           </div>
         </div>
