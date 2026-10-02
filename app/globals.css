@@ -3786,16 +3786,18 @@ a {
 @media (max-width: 700px) {
   .callout-wing {
     top: 36%;
-    left: 12%;
+    left: 2%;
     right: auto;
-    width: auto;
+    width: 145px;
     color: #666;
     white-space: nowrap;
+    text-align: left;
+    z-index: 10;
   }
 
   .callout-wing::before {
-    left: calc(100% + 10px);
+    left: calc(100% + 8px);
     right: auto;
-    width: 48px;
+    width: 52px;
   }
 }
