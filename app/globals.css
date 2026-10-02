@@ -3801,3 +3801,19 @@ a {
     width: 52px;
   }
 }
+/* MOBILE — 02 FEATHERED WING LABEL FIX */
+@media (max-width: 700px) {
+  .callout-wing {
+    overflow: visible !important;
+  }
+
+  .callout-wing-text {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: max-content;
+    white-space: nowrap;
+    color: #666;
+    transform: translateX(0);
+  }
+}
