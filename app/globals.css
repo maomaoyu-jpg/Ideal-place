@@ -1337,3 +1337,97 @@ a {
     font-size: 38px;
   }
 }
+/* ========================================
+   NOAH — GRADIENT OVERRIDE
+======================================== */
+
+/* 整個 NOAH 從理想國的白，逐漸進入荒沼的深灰 */
+
+.noah-page {
+  background:
+    linear-gradient(
+      to bottom,
+      #f2f1ed 0%,
+      #f2f1ed 35%,
+      #ebeae6 48%,
+      #d8d7d3 62%,
+      #aaa9a6 78%,
+      #666664 91%,
+      #3a3a39 100%
+    );
+}
+
+/* 地圖拉長一點，讓漸層有呼吸空間 */
+
+.noah-map {
+  height: 1250px;
+}
+
+/* 原本的荒沼黑卡片取消 */
+
+.noah-location-e {
+  right: 2%;
+  top: 930px;
+  min-width: 230px;
+  padding: 0;
+  background: transparent;
+  color: #f2f1ed;
+  text-align: right;
+}
+
+.noah-location-e .noah-location-number,
+.noah-location-e .noah-location-zh,
+.noah-location-e .noah-location-type {
+  color: #e0dfdb;
+}
+
+.noah-location-e .noah-location-name {
+  font-size: clamp(42px, 5vw, 68px);
+  color: #f2f1ed;
+}
+
+.noah-location-e .noah-location-point {
+  left: -48px;
+  top: 34px;
+  border-color: #f2f1ed;
+  background: transparent;
+}
+
+/* 地圖最後的說明也跟著進入暗部 */
+
+.noah-map-caption {
+  color: #d0cfcb;
+}
+
+/* mobile */
+
+@media (max-width: 700px) {
+  .noah-page {
+    background:
+      linear-gradient(
+        to bottom,
+        #f2f1ed 0%,
+        #f2f1ed 34%,
+        #ecebe7 46%,
+        #d9d8d4 60%,
+        #aaa9a6 76%,
+        #686866 90%,
+        #383837 100%
+      );
+  }
+
+  .noah-map {
+    height: 1200px;
+  }
+
+  .noah-location-e {
+    right: 0;
+    top: 920px;
+    min-width: 190px;
+    padding: 0;
+  }
+
+  .noah-location-e .noah-location-name {
+    font-size: 42px;
+  }
+}
