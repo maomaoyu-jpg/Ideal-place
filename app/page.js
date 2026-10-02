@@ -5,7 +5,7 @@ const sections = [
     number: "01",
     title: "WORLD",
     zh: "理想國",
-    verdict: "如夢似幻，完美的理想鄉……？",
+    verdict: "歡迎來到理想國⊹₊⟡",
     href: "/world",
   },
   {
