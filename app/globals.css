@@ -2420,7 +2420,7 @@ a {
 .home-index-verdict {
   grid-column: 2 / -1;
   display: block;
-  margin-top: 8px;
+  margin-top: 2px;
 
   font-family:
     "Noto Serif TC",
@@ -2429,9 +2429,9 @@ a {
     "新細明體",
     serif;
 
-  font-size: 13px;
-  line-height: 1.7;
-  letter-spacing: 0.08em;
+  font-size: 11px;
+  line-height: 1.45;
+  letter-spacing: 0.06em;
 
   color: #9a9a96;
 
@@ -2442,16 +2442,16 @@ a {
 
 .home-index-item:hover .home-index-verdict {
   color: #292929;
-  transform: translateX(5px);
+  transform: translateX(4px);
 }
 
 @media (max-width: 700px) {
   .home-index-verdict {
     grid-column: 2 / -1;
-    margin-top: 5px;
+    margin-top: 1px;
 
-    font-size: 11px;
-    line-height: 1.6;
-    letter-spacing: 0.06em;
+    font-size: 9px;
+    line-height: 1.4;
+    letter-spacing: 0.05em;
   }
 }
