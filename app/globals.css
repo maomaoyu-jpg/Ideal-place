@@ -2383,45 +2383,33 @@ a {
     line-height: 1.15;
     letter-spacing: 0.06em;
   }
+   
+.story-01 {
+  left: 0;
+  top: 120px;
+}
 
-  .story-01 {
-    left: 0;
-    top: 120px;
-  }
+.story-02 {
+  right: 7%;
+  top: 300px;
+}
 
-  .story-02 {
-    right: 0;
-    top: 300px;
-  }
+.story-03 {
+  left: 9%;
+  top: 480px;
+}
 
-  .story-03 {
-    left: 12%;
-    top: 480px;
-  }
+.story-04 {
+  right: 1%;
+  top: 660px;
+}
 
-  .story-04 {
-    right: 0;
-    top: 660px;
-  }
+.story-05 {
+  left: 4%;
+  top: 840px;
+}
 
-  .story-05 {
-    left: 0;
-    top: 840px;
-  }
-
-  .story-06 {
-    right: 0;
-    top: 1020px;
-  }
-
-  .stories-index::before {
-    top: 90px;
-    height: 920px;
-  }
-
-  .stories-index::after {
-    left: 5%;
-    top: 620px;
-    width: 90%;
-  }
+.story-06 {
+  right: 0;
+  top: 1020px;
 }
