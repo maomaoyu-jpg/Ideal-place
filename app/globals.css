@@ -132,8 +132,14 @@ a {
 
   display: grid;
   grid-template-columns: 46px 1fr auto;
-  align-items: center;
-  gap: 16px;
+  grid-template-rows: auto auto;
+  column-gap: 16px;
+  row-gap: 2px;
+
+  align-content: center;
+  align-items: baseline;
+
+  padding: 8px 0;
 
   border-bottom: 1px solid #aaa;
 
@@ -2420,7 +2426,7 @@ a {
 .home-index-verdict {
   grid-column: 2 / -1;
   display: block;
-  margin-top: 2px;
+  margin-top: 0px;
 
   font-family:
     "Noto Serif TC",
