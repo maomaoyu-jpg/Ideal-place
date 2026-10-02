@@ -63,7 +63,7 @@ export default function Home() {
               {section.zh}
             </span>
 
-            <span className="home-index-arrow">↗</span>
+            <span className="home-index-arrow" aria-hidden="true"></span>
           </Link>
         ))}
       </nav>
