@@ -1825,29 +1825,6 @@ a {
   z-index: 3;
 }
 
-
-/*
-  荒沼的黑色只從右側邊界露出，
-  不再覆蓋 Pan。
-*/
-
-.guide-pan::before {
-  content: "";
-
-  position: absolute;
-  z-index: -1;
-
-  width: 260px;
-  height: 260px;
-
-  right: -310px;
-  top: -75px;
-
-  border-radius: 50%;
-  background: #111;
-}
-
-
 /* P05 cancelled identity */
 
 .guide-id-struck {
@@ -2041,15 +2018,6 @@ a {
 
     min-width: 145px;
   }
-
-  .guide-pan::before {
-    width: 220px;
-    height: 220px;
-
-    right: -215px;
-    top: -55px;
-  }
-
 
   /* LINES */
 
