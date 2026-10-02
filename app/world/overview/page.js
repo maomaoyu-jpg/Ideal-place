@@ -76,7 +76,7 @@ export default function WorldOverview() {
         <figure className="overview-wing">
           <div className="overview-wing-frame">
             <img
-              src="/images/world/overview-wing.jpg"
+              src="/images/world/IMG_4425.jpeg"
               alt="古典石雕羽翼局部"
             />
           </div>
