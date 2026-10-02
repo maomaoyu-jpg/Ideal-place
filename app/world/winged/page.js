@@ -45,27 +45,29 @@ export default function Winged() {
           </div>
         </div>
 
-        <div className="winged-figure" aria-hidden="true">
-          <div className="winged-figure-word">WINGED</div>
+        <div className="winged-figure">
+          <div className="winged-figure-word" aria-hidden="true">
+            WINGED
+          </div>
 
-          <div className="winged-orbit orbit-a"></div>
-          <div className="winged-orbit orbit-b"></div>
+          <div className="winged-orbit orbit-a" aria-hidden="true"></div>
+          <div className="winged-orbit orbit-b" aria-hidden="true"></div>
 
           <img
             className="winged-figure-wings"
-            src="/images/world/winged/000-wings.png"
+            src="/images/world/winged/20822a2673eb9415cb607943a4a365f3-1.png"
             alt=""
           />
 
           <img
             className="winged-figure-body"
-            src="/images/world/winged/000-body.png"
-            alt=""
+            src="/images/world/winged/20822a2673eb9415cb607943a4a365f3-3.png"
+            alt="有翼族角色 000 的視覺紀錄"
           />
 
           <img
             className="winged-figure-halo"
-            src="/images/world/winged/000-halo.png"
+            src="/images/world/winged/20822a2673eb9415cb607943a4a365f3-2.png"
             alt=""
           />
 
@@ -90,9 +92,7 @@ export default function Winged() {
             以及頭頂光環的類人種族。
           </p>
 
-          <p>
-            性格高傲，自視不凡。
-          </p>
+          <p>性格高傲，自視不凡。</p>
         </div>
       </section>
 
@@ -104,9 +104,8 @@ export default function Winged() {
 
         <div className="winged-structure-heading">
           <span>NUMBER OF WINGS</span>
-          <h2>
-            2 / 4 / 6
-          </h2>
+
+          <h2>2 / 4 / 6</h2>
 
           <p>
             有翼族具有雙翼、四翼與六翼的天生基因差異。
@@ -118,9 +117,9 @@ export default function Winged() {
           {wingTypes.map((type) => (
             <div className="winged-type" key={type.number}>
               <div className="winged-type-diagram" aria-hidden="true">
-                <span className="wing-line wing-line-left"></span>
+                <span className="wing-line"></span>
                 <span className="wing-core"></span>
-                <span className="wing-line wing-line-right"></span>
+                <span className="wing-line"></span>
               </div>
 
               <span className="winged-type-number">{type.number}</span>
@@ -157,6 +156,7 @@ export default function Winged() {
 
         <div className="winged-systems-heading">
           <span>NON-NATURAL DIFFERENTIATION</span>
+
           <h2>
             WHITE
             <br />
@@ -169,20 +169,53 @@ export default function Winged() {
           </p>
         </div>
 
-        <div className="winged-system-note">
-          <span>WHITE WING</span>
-          <strong>白羽</strong>
-          <small>ANGEL / 天使</small>
-        </div>
+        <div className="winged-dual">
+          <figure className="winged-dual-figure winged-dual-white">
+            <div className="winged-dual-image">
+              <img
+                src="/images/world/winged/IMG_0670.PNG"
+                alt="000，白羽有翼族"
+              />
+              <span className="winged-dual-letter">W</span>
+            </div>
 
-        <div className="winged-system-divider" aria-hidden="true">
-          <span></span>
-        </div>
+            <figcaption>
+              <div>
+                <span>WHITE WING / 000</span>
+                <strong>白羽</strong>
+              </div>
 
-        <div className="winged-system-note winged-system-black">
-          <span>BLACK WING</span>
-          <strong>黑羽</strong>
-          <small>CLASSIFICATION RECORD</small>
+              <small>ARTWORK / 鮫</small>
+            </figcaption>
+          </figure>
+
+          <div className="winged-dual-axis" aria-hidden="true">
+            <span></span>
+            <i></i>
+            <span></span>
+          </div>
+
+          <figure className="winged-dual-figure winged-dual-black">
+            <div className="winged-dual-image">
+              <img
+                src="/images/world/winged/IMG_0669.PNG"
+                alt="潘，黑羽有翼族"
+              />
+              <span className="winged-dual-letter">B</span>
+            </div>
+
+            <figcaption>
+              <div>
+                <span>BLACK WING / PAN</span>
+                <strong>黑羽</strong>
+              </div>
+
+              <div className="winged-pan-meta">
+                <small>OUTSIDE JURISDICTION</small>
+                <small>ARTWORK / 鮫</small>
+              </div>
+            </figcaption>
+          </figure>
         </div>
 
         <p className="winged-systems-footnote">
