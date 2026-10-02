@@ -3785,14 +3785,15 @@ a {
 }
 @media (max-width: 700px) {
   .callout-wing {
-    top: 43%;
-    left: 5%;
+    top: 36%;
+    left: -1%;
     right: auto;
+    color: #666;
   }
 
   .callout-wing::before {
     left: calc(100% + 10px);
     right: auto;
-    width: 55px;
+    width: 72px;
   }
 }
