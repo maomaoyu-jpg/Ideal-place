@@ -2461,3 +2461,400 @@ a {
     letter-spacing: 0.05em;
   }
 }
+/* ========================================
+   WORLD OVERVIEW
+======================================== */
+
+.overview-page {
+  overflow: hidden;
+  background: #f2f1ed;
+  color: #111;
+}
+
+.overview-hero {
+  position: relative;
+  min-height: 720px;
+  padding: 80px max(9vw, 34px) 100px;
+}
+
+.overview-meta {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #aaa;
+  padding-bottom: 12px;
+
+  font-size: 8px;
+  letter-spacing: 0.2em;
+  color: #666;
+}
+
+.overview-heading {
+  position: relative;
+  margin-top: 82px;
+}
+
+.overview-heading > span {
+  font-size: 8px;
+  letter-spacing: 0.22em;
+}
+
+.overview-heading h1 {
+  margin: 14px 0 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(82px, 15vw, 190px);
+  font-weight: 400;
+  line-height: 0.69;
+  letter-spacing: -0.075em;
+}
+
+.overview-heading-bottom {
+  display: flex;
+  align-items: baseline;
+  gap: 22px;
+  margin-top: 44px;
+}
+
+.overview-heading-bottom strong {
+  font-family:
+    "Noto Serif TC",
+    "Songti TC",
+    "PMingLiU",
+    serif;
+  font-size: 28px;
+  font-weight: 400;
+}
+
+.overview-heading-bottom span {
+  font-size: 8px;
+  letter-spacing: 0.18em;
+  color: #666;
+}
+
+.overview-intro {
+  width: min(520px, 72%);
+  margin: 82px 0 0 auto;
+
+  font-family:
+    "Noto Serif TC",
+    "Songti TC",
+    "PMingLiU",
+    serif;
+  font-size: 20px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.overview-intro em {
+  display: block;
+  margin-top: 18px;
+  font-style: normal;
+}
+
+.overview-hero-mark {
+  position: absolute;
+  right: 9vw;
+  top: 235px;
+  width: 120px;
+  height: 120px;
+  opacity: 0.28;
+}
+
+.overview-hero-mark span:first-child {
+  position: absolute;
+  inset: 0;
+  border: 1px solid #111;
+  border-radius: 50%;
+}
+
+.overview-hero-mark span:last-child {
+  position: absolute;
+  left: 50%;
+  top: -35px;
+  width: 1px;
+  height: 190px;
+  background: #111;
+}
+
+/* NOAH */
+
+.overview-noah {
+  position: relative;
+  min-height: 980px;
+  padding: 110px max(9vw, 34px);
+  border-top: 1px solid #aaa;
+}
+
+.overview-section-number,
+.overview-winged-index {
+  font-size: 8px;
+  letter-spacing: 0.2em;
+  color: #666;
+}
+
+.overview-noah-copy {
+  position: relative;
+  z-index: 2;
+  width: min(470px, 48%);
+  margin-top: 55px;
+}
+
+.overview-noah-copy h2,
+.overview-winged-title h2 {
+  margin: 0 0 34px;
+
+  font-family:
+    "Noto Serif TC",
+    "Songti TC",
+    "PMingLiU",
+    serif;
+  font-size: clamp(42px, 5vw, 72px);
+  font-weight: 400;
+}
+
+.overview-noah-copy p,
+.overview-winged-copy p {
+  font-size: 13px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: #444;
+}
+
+.overview-noah-last {
+  margin-top: 38px;
+}
+
+.overview-wing {
+  position: absolute;
+  width: 48vw;
+  max-width: 690px;
+  right: -4vw;
+  top: 215px;
+  margin: 0;
+}
+
+.overview-wing-frame {
+  height: 610px;
+  overflow: hidden;
+  background: #ddd;
+}
+
+.overview-wing img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 35% center;
+  filter: grayscale(100%);
+}
+
+.overview-wing figcaption {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+
+  font-size: 7px;
+  letter-spacing: 0.15em;
+  color: #777;
+}
+
+/* WINGED */
+
+.overview-winged {
+  display: grid;
+  grid-template-columns: 90px 1fr 1fr;
+  gap: 40px;
+
+  padding: 130px max(9vw, 34px);
+  border-top: 1px solid #aaa;
+}
+
+.overview-winged-title > span {
+  display: block;
+  margin-bottom: 14px;
+  font-size: 8px;
+  letter-spacing: 0.2em;
+  color: #777;
+}
+
+.overview-winged-copy {
+  padding-top: 50px;
+}
+
+.overview-read-record {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 48px;
+  padding: 14px 0;
+  border-top: 1px solid #999;
+  border-bottom: 1px solid #999;
+
+  font-size: 8px;
+  letter-spacing: 0.18em;
+  transition: padding-left 0.25s ease;
+}
+
+.overview-read-record:hover {
+  padding-left: 10px;
+}
+
+/* RELATED RECORDS */
+
+.overview-related {
+  padding: 80px max(9vw, 34px) 120px;
+  background: #171717;
+  color: #f2f1ed;
+}
+
+.overview-related-head {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 55px;
+
+  font-size: 8px;
+  letter-spacing: 0.2em;
+  color: #aaa;
+}
+
+.overview-related-item {
+  display: grid;
+  grid-template-columns: 70px 1fr auto;
+  align-items: baseline;
+
+  padding: 18px 0;
+  border-top: 1px solid #555;
+}
+
+.overview-related-item:last-of-type {
+  border-bottom: 1px solid #555;
+}
+
+.overview-related-item > span:first-child,
+.overview-related-item > span:last-child {
+  font-size: 8px;
+  letter-spacing: 0.16em;
+  color: #aaa;
+}
+
+.overview-related-item strong {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+}
+
+.overview-back {
+  display: inline-block;
+  margin-top: 70px;
+  font-size: 8px;
+  letter-spacing: 0.18em;
+  color: #aaa;
+}
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+  .overview-hero {
+    min-height: auto;
+    padding: 55px 9vw 90px;
+  }
+
+  .overview-heading {
+    margin-top: 65px;
+  }
+
+  .overview-heading h1 {
+    font-size: 25vw;
+    line-height: 0.72;
+  }
+
+  .overview-heading-bottom {
+    margin-top: 35px;
+  }
+
+  .overview-heading-bottom strong {
+    font-size: 24px;
+  }
+
+  .overview-intro {
+    width: 88%;
+    margin-top: 75px;
+    font-size: 16px;
+    line-height: 2;
+  }
+
+  .overview-hero-mark {
+    width: 72px;
+    height: 72px;
+    right: 8vw;
+    top: 205px;
+  }
+
+  .overview-hero-mark span:last-child {
+    top: -25px;
+    height: 120px;
+  }
+
+  .overview-noah {
+    min-height: auto;
+    padding: 80px 9vw 95px;
+  }
+
+  .overview-noah-copy {
+    width: 88%;
+    margin-top: 38px;
+  }
+
+  .overview-noah-copy h2,
+  .overview-winged-title h2 {
+    font-size: 43px;
+  }
+
+  .overview-wing {
+    position: relative;
+    width: 104%;
+    max-width: none;
+    right: auto;
+    margin: 70px 0 0 12%;
+    top: auto;
+  }
+
+  .overview-wing-frame {
+    height: 440px;
+  }
+
+  .overview-wing figcaption {
+    padding-right: 8%;
+  }
+
+  .overview-winged {
+    display: block;
+    padding: 85px 9vw 100px;
+  }
+
+  .overview-winged-title {
+    margin-top: 45px;
+  }
+
+  .overview-winged-copy {
+    width: 88%;
+    margin-left: auto;
+    padding-top: 10px;
+  }
+
+  .overview-related {
+    padding: 70px 9vw 100px;
+  }
+
+  .overview-related-item {
+    grid-template-columns: 42px 1fr auto;
+    gap: 10px;
+    padding: 16px 0;
+  }
+
+  .overview-related-item strong {
+    font-size: 18px;
+  }
+
+  .overview-related-item > span:last-child {
+    font-size: 7px;
+  }
+}
