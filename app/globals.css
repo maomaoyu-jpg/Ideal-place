@@ -2413,3 +2413,45 @@ a {
   right: 0;
   top: 1020px;
 }
+/* ========================================
+   HOME — VERDICTS
+======================================== */
+
+.home-index-verdict {
+  grid-column: 2 / -1;
+  display: block;
+  margin-top: 8px;
+
+  font-family:
+    "Noto Serif TC",
+    "Songti TC",
+    "PMingLiU",
+    "新細明體",
+    serif;
+
+  font-size: 13px;
+  line-height: 1.7;
+  letter-spacing: 0.08em;
+
+  color: #9a9a96;
+
+  transition:
+    color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.home-index-item:hover .home-index-verdict {
+  color: #292929;
+  transform: translateX(5px);
+}
+
+@media (max-width: 700px) {
+  .home-index-verdict {
+    grid-column: 2 / -1;
+    margin-top: 5px;
+
+    font-size: 11px;
+    line-height: 1.6;
+    letter-spacing: 0.06em;
+  }
+}
