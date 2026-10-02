@@ -513,3 +513,446 @@ a {
     font-size: 9px;
   }
 }
+/* ========================================
+   WORLD — EDITORIAL VERSION
+======================================== */
+
+.world-editorial {
+  min-height: 100vh;
+  padding: 0 8vw 12vh;
+  overflow: hidden;
+}
+
+/* COVER */
+
+.world-cover {
+  position: relative;
+  min-height: 620px;
+  padding-top: 8vh;
+  border-bottom: 1px solid #aaa;
+}
+
+.world-meta {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  justify-content: space-between;
+  font-size: 8px;
+  letter-spacing: 0.22em;
+  color: #777;
+}
+
+.world-title-block {
+  position: absolute;
+  z-index: 3;
+  left: 0;
+  bottom: 90px;
+  width: 100%;
+}
+
+.world-kicker {
+  display: block;
+  margin-bottom: 24px;
+  font-size: 8px;
+  letter-spacing: 0.22em;
+  color: #666;
+}
+
+.world-title-block h1 {
+  margin: 0;
+  font-size: clamp(110px, 18vw, 240px);
+  line-height: 0.68;
+  letter-spacing: -0.085em;
+  font-weight: 400;
+}
+
+.world-title-bottom {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin-top: 32px;
+}
+
+.world-title-bottom strong {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 19px;
+  font-weight: 400;
+}
+
+.world-title-bottom span {
+  padding-left: 25px;
+  border-left: 1px solid #999;
+  font-size: 7px;
+  letter-spacing: 0.22em;
+  color: #777;
+}
+
+.world-cover-note {
+  position: absolute;
+  z-index: 3;
+  right: 0;
+  bottom: 92px;
+  margin: 0;
+  text-align: right;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 10px;
+  line-height: 1.8;
+  letter-spacing: 0.08em;
+}
+
+/* COVER GRAPHIC */
+
+.world-cover-art {
+  position: absolute;
+  width: 420px;
+  height: 420px;
+  right: -80px;
+  top: 35px;
+  opacity: 0.36;
+  pointer-events: none;
+}
+
+.world-ring {
+  position: absolute;
+  border: 1px solid #888;
+  border-radius: 50%;
+}
+
+.ring-large {
+  width: 390px;
+  height: 390px;
+  left: 0;
+  top: 0;
+}
+
+.ring-small {
+  width: 210px;
+  height: 210px;
+  left: 90px;
+  top: 90px;
+}
+
+.world-axis {
+  position: absolute;
+  width: 520px;
+  height: 1px;
+  left: -100px;
+  top: 195px;
+  background: #888;
+}
+
+.world-point {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  left: 190px;
+  top: 190px;
+  border-radius: 50%;
+  background: #111;
+}
+
+/* EDITORIAL INDEX */
+
+.editorial-index {
+  position: relative;
+  height: 1120px;
+  margin-top: 70px;
+}
+
+.editorial-record {
+  position: absolute;
+  z-index: 2;
+  display: block;
+  transition:
+    transform 0.25s ease,
+    opacity 0.25s ease;
+}
+
+.editorial-record:hover {
+  transform: translateY(-5px);
+}
+
+.editorial-number {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 8px;
+  letter-spacing: 0.2em;
+  color: #777;
+}
+
+.editorial-title {
+  display: block;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(30px, 4vw, 58px);
+  line-height: 0.88;
+  letter-spacing: -0.045em;
+}
+
+.editorial-title > span {
+  display: block;
+}
+
+.editorial-zh {
+  display: block;
+  margin-top: 12px;
+  font-size: 9px;
+  letter-spacing: 0.16em;
+  color: #666;
+}
+
+/* individual positions */
+
+.record-a {
+  left: 0;
+  top: 40px;
+}
+
+.record-b {
+  right: 5%;
+  top: 90px;
+  text-align: right;
+}
+
+.record-c {
+  left: 31%;
+  top: 255px;
+}
+
+.record-d {
+  left: 4%;
+  top: 420px;
+}
+
+.record-e {
+  right: 2%;
+  top: 390px;
+  text-align: right;
+}
+
+.record-f {
+  left: 28%;
+  top: 560px;
+  padding: 55px 70px;
+  border: 1px solid #999;
+  background: #f2f1ed;
+}
+
+.record-f .editorial-number {
+  position: absolute;
+  left: -34px;
+  top: -20px;
+}
+
+.record-f .editorial-title {
+  font-size: clamp(48px, 7vw, 92px);
+}
+
+.record-f .editorial-zh {
+  margin-top: 20px;
+}
+
+.record-g {
+  left: 3%;
+  top: 900px;
+}
+
+.record-h {
+  right: 7%;
+  top: 930px;
+  text-align: right;
+}
+
+/* central construction lines */
+
+.index-axis {
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  top: 0;
+  width: 1px;
+  height: 100%;
+  background: #d0cec8;
+}
+
+.index-axis::before,
+.index-axis::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 7px;
+  height: 7px;
+  border: 1px solid #999;
+  border-radius: 50%;
+  background: #f2f1ed;
+}
+
+.index-axis::before {
+  top: 210px;
+}
+
+.index-axis::after {
+  top: 850px;
+}
+
+.index-axis span {
+  position: absolute;
+  width: 70vw;
+  height: 1px;
+  left: 50%;
+  top: 710px;
+  transform: translateX(-50%);
+  background: #d0cec8;
+}
+
+/* tiny editorial notes */
+
+.index-caption {
+  position: absolute;
+  z-index: 1;
+  font-size: 7px;
+  line-height: 1.8;
+  letter-spacing: 0.2em;
+  color: #aaa;
+}
+
+.caption-one {
+  left: 51%;
+  top: 185px;
+}
+
+.caption-two {
+  right: 51%;
+  top: 825px;
+  text-align: right;
+}
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+  .world-editorial {
+    padding: 0 9vw 10vh;
+  }
+
+  .world-cover {
+    min-height: 570px;
+    padding-top: 7vh;
+  }
+
+  .world-cover-art {
+    width: 270px;
+    height: 270px;
+    right: -120px;
+    top: 75px;
+    transform: scale(0.75);
+    transform-origin: top right;
+    opacity: 0.28;
+  }
+
+  .world-title-block {
+    bottom: 115px;
+  }
+
+  .world-title-block h1 {
+    font-size: 22vw;
+  }
+
+  .world-title-bottom {
+    margin-top: 26px;
+  }
+
+  .world-title-bottom strong {
+    font-size: 16px;
+  }
+
+  .world-cover-note {
+    left: 0;
+    right: auto;
+    bottom: 45px;
+    text-align: left;
+    font-size: 8px;
+  }
+
+  .editorial-index {
+    height: 1120px;
+    margin-top: 50px;
+  }
+
+  .editorial-title {
+    font-size: 28px;
+  }
+
+  .editorial-zh {
+    font-size: 8px;
+  }
+
+  .record-a {
+    left: 0;
+    top: 25px;
+  }
+
+  .record-b {
+    right: 0;
+    top: 115px;
+  }
+
+  .record-c {
+    left: 18%;
+    top: 235px;
+  }
+
+  .record-d {
+    left: 0;
+    top: 360px;
+  }
+
+  .record-e {
+    right: 0;
+    top: 405px;
+  }
+
+  .record-f {
+    left: 8%;
+    right: 0;
+    top: 555px;
+    padding: 42px 30px 45px;
+  }
+
+  .record-f .editorial-number {
+    left: -18px;
+    top: -22px;
+  }
+
+  .record-f .editorial-title {
+    font-size: 46px;
+  }
+
+  .record-g {
+    left: 0;
+    top: 890px;
+  }
+
+  .record-h {
+    right: 0;
+    top: 960px;
+  }
+
+  .index-axis {
+    left: 50%;
+  }
+
+  .index-axis span {
+    width: 82vw;
+    top: 750px;
+  }
+
+  .caption-one {
+    left: 53%;
+    top: 200px;
+  }
+
+  .caption-two {
+    right: 53%;
+    top: 815px;
+  }
+}
