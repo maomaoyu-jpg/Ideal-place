@@ -173,7 +173,7 @@ export default function Winged() {
           <figure className="winged-dual-figure winged-dual-white">
             <div className="winged-dual-image">
               <img
-                src="/images/world/winged/IMG_0670.PNG"
+                src="/images/world/winged/IMG_0670.png"
                 alt="000，白羽有翼族"
               />
               <span className="winged-dual-letter">W</span>
@@ -198,7 +198,7 @@ export default function Winged() {
           <figure className="winged-dual-figure winged-dual-black">
             <div className="winged-dual-image">
               <img
-                src="/images/world/winged/IMG_0669.PNG"
+                src="/images/world/winged/IMG_0669.png"
                 alt="潘，黑羽有翼族"
               />
               <span className="winged-dual-letter">B</span>
