@@ -120,10 +120,7 @@ export default function Guides() {
           </Link>
         ))}
 
-        <div className="guides-footnote">
-          EACH RECORD OFFERS A DIFFERENT POINT OF VIEW.
-        </div>
-      </section>
-    </main>
-  );
-}
+       <div className="guides-footnote">
+  <strong>「本同為迷茫之人」</strong>
+  <span>THOSE WHO ARE LOST THEMSELVES.</span>
+</div>
