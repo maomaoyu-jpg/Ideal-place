@@ -3746,3 +3746,40 @@ a {
     padding: 35px 9vw 55px;
   }
 }
+/* ========================================
+   WINGED / MOBILE PROPORTION FIX
+======================================== */
+
+.winged-figure-wings {
+  z-index: 1;
+}
+
+.winged-figure-halo {
+  z-index: 2;
+}
+
+.winged-figure-body {
+  z-index: 3;
+}
+
+@media (max-width: 700px) {
+  /* 000：三層一起縮放與移動 */
+  .winged-figure {
+    width: 92vw;
+    right: -10vw;
+    top: 350px;
+  }
+
+  /* 分類編碼 */
+  .winged-structure-heading h2 {
+    font-size: 15vw;
+    letter-spacing: -0.04em;
+  }
+
+  /* WHITE / BLACK */
+  .winged-systems-heading h2 {
+    font-size: 15vw;
+    line-height: 0.78;
+    letter-spacing: -0.05em;
+  }
+}
