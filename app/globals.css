@@ -1507,12 +1507,161 @@ a {
 
 
 /* ========================================
+   GUIDES — PERSONNEL INDEX
+======================================== */
+
+.guides-page {
+  min-height: 100vh;
+  padding: 0 8vw 12vh;
+  overflow: hidden;
+  background: #f2f1ed;
+}
+
+
+/* COVER */
+
+.guides-cover {
+  position: relative;
+  min-height: 590px;
+  padding-top: 8vh;
+  border-bottom: 1px solid #aaa;
+}
+
+.guides-meta {
+  position: relative;
+  z-index: 3;
+
+  display: flex;
+  justify-content: space-between;
+
+  font-size: 8px;
+  letter-spacing: 0.22em;
+  color: #777;
+}
+
+.guides-heading {
+  position: absolute;
+  z-index: 3;
+
+  left: 0;
+  bottom: 90px;
+}
+
+.guides-heading > span {
+  display: block;
+  margin-bottom: 22px;
+
+  font-size: 8px;
+  letter-spacing: 0.22em;
+  color: #666;
+}
+
+.guides-heading h1 {
+  margin: 0;
+
+  font-size: clamp(100px, 17vw, 225px);
+  line-height: 0.68;
+  letter-spacing: -0.085em;
+  font-weight: 400;
+}
+
+.guides-heading-bottom {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-top: 30px;
+}
+
+.guides-heading-bottom strong {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 19px;
+  font-weight: 400;
+}
+
+.guides-heading-bottom span {
+  padding-left: 24px;
+  border-left: 1px solid #999;
+
+  font-size: 7px;
+  letter-spacing: 0.2em;
+  color: #777;
+}
+
+
+/* COVER GRAPHIC */
+
+.guides-cover-mark {
+  position: absolute;
+
+  width: 350px;
+  height: 350px;
+
+  right: -25px;
+  top: 75px;
+
+  opacity: 0.32;
+  pointer-events: none;
+}
+
+.guide-mark-circle {
+  position: absolute;
+
+  width: 210px;
+  height: 210px;
+
+  right: 30px;
+  top: 55px;
+
+  border: 1px solid #888;
+  border-radius: 50%;
+}
+
+.guide-mark-line {
+  position: absolute;
+  display: block;
+  background: #888;
+}
+
+.guide-mark-line-a {
+  width: 330px;
+  height: 1px;
+
+  right: -20px;
+  top: 160px;
+
+  transform: rotate(-18deg);
+}
+
+.guide-mark-line-b {
+  width: 1px;
+  height: 310px;
+
+  right: 135px;
+  top: 0;
+
+  transform: rotate(18deg);
+}
+
+.guide-mark-point {
+  position: absolute;
+
+  width: 9px;
+  height: 9px;
+
+  right: 131px;
+  top: 156px;
+
+  border-radius: 50%;
+  background: #111;
+}
+
+
+/* ========================================
    GUIDE INDEX
 ======================================== */
 
 .guides-index {
   position: relative;
-
   height: 1280px;
   margin-top: 65px;
 }
@@ -1556,13 +1705,34 @@ a {
   color: #777;
 }
 
+
+/*
+  所有人使用同一套主要名字字級。
+  不用大小區分角色重要性。
+*/
+
 .guide-entry-primary {
   display: block;
 
   font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(42px, 6vw, 82px);
+  font-size: clamp(48px, 6vw, 72px);
+  font-weight: 400;
   line-height: 0.88;
-  letter-spacing: -0.05em;
+  letter-spacing: -0.045em;
+}
+
+
+/*
+  E27 / 000 同樣使用 Georgia。
+  數字與英文字母因此屬於同一套字形系統。
+*/
+
+.guide-e27 .guide-entry-primary,
+.guide-000 .guide-entry-primary {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(48px, 6vw, 72px);
+  font-weight: 400;
+  letter-spacing: -0.045em;
 }
 
 .guide-entry-secondary {
@@ -1604,16 +1774,12 @@ a {
   top: 125px;
 }
 
-.guide-hitar .guide-entry-primary {
-  font-size: clamp(64px, 9vw, 120px);
-}
-
 
 /* Frey */
 
 .guide-frey {
   right: 5%;
-  top: 245px;
+  top: 285px;
   text-align: right;
 }
 
@@ -1621,8 +1787,8 @@ a {
 /* Rei */
 
 .guide-rei {
-  left: 30%;
-  top: 430px;
+  left: 25%;
+  top: 455px;
 }
 
 
@@ -1630,19 +1796,12 @@ a {
 
 .guide-e27 {
   right: 3%;
-  top: 600px;
+  top: 625px;
   text-align: right;
-}
-
-.guide-e27 .guide-entry-primary {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: clamp(70px, 10vw, 135px);
-  letter-spacing: -0.07em;
 }
 
 .guide-e27 .guide-entry-secondary {
   font-family: Georgia, "Times New Roman", serif;
-  font-size: 17px;
 }
 
 
@@ -1650,13 +1809,7 @@ a {
 
 .guide-000 {
   left: 7%;
-  top: 810px;
-}
-
-.guide-000 .guide-entry-primary {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: clamp(58px, 8vw, 105px);
-  letter-spacing: -0.065em;
+  top: 820px;
 }
 
 
@@ -1664,12 +1817,19 @@ a {
 
 .guide-pan {
   right: 5%;
-  top: 1030px;
+  top: 1020px;
 
-  min-width: 210px;
+  min-width: 180px;
 
   text-align: right;
+  z-index: 3;
 }
+
+
+/*
+  荒沼的黑色只從右側邊界露出，
+  不再覆蓋 Pan。
+*/
 
 .guide-pan::before {
   content: "";
@@ -1677,28 +1837,28 @@ a {
   position: absolute;
   z-index: -1;
 
-  width: 300px;
-  height: 300px;
+  width: 260px;
+  height: 260px;
 
-  right: -215px;
-  top: -95px;
+  right: -310px;
+  top: -75px;
 
   border-radius: 50%;
   background: #111;
 }
 
-.guide-pan .guide-entry-primary {
-  font-size: clamp(58px, 8vw, 105px);
-}
+
+/* P05 cancelled identity */
 
 .guide-id-struck {
-  position: relative;
   text-decoration: line-through;
   text-decoration-thickness: 1px;
 }
 
 
-/* CONSTRUCTION LINE */
+/* ========================================
+   CONSTRUCTION LINES
+======================================== */
 
 .guides-index::before {
   content: "";
@@ -1720,7 +1880,7 @@ a {
   position: absolute;
 
   left: 18%;
-  top: 705px;
+  top: 720px;
 
   width: 64%;
   height: 1px;
@@ -1729,19 +1889,39 @@ a {
 }
 
 
-/* FOOTNOTE */
+/* ========================================
+   FOOTNOTE
+======================================== */
 
 .guides-footnote {
   position: absolute;
 
   left: 50%;
-  bottom: 15px;
+  bottom: 10px;
+
+  width: 100%;
 
   transform: translateX(-50%);
 
-  white-space: nowrap;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
 
-  font-size: 7px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.guides-footnote strong {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.14em;
+  color: #555;
+}
+
+.guides-footnote span {
+  font-size: 6px;
   letter-spacing: 0.2em;
   color: #aaa;
 }
@@ -1756,6 +1936,9 @@ a {
   .guides-page {
     padding: 0 9vw 10vh;
   }
+
+
+  /* COVER */
 
   .guides-cover {
     min-height: 550px;
@@ -1795,8 +1978,14 @@ a {
     margin-top: 45px;
   }
 
-  .guide-entry-primary {
-    font-size: 43px;
+  .guide-entry-primary,
+  .guide-e27 .guide-entry-primary,
+  .guide-000 .guide-entry-primary {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 46px;
+    font-weight: 400;
+    line-height: 0.88;
+    letter-spacing: -0.045em;
   }
 
   .guide-entry-secondary {
@@ -1809,10 +1998,6 @@ a {
   .guide-hitar {
     left: 0;
     top: 120px;
-  }
-
-  .guide-hitar .guide-entry-primary {
-    font-size: 62px;
   }
 
 
@@ -1828,7 +2013,7 @@ a {
 
   .guide-rei {
     left: 17%;
-    top: 455px;
+    top: 460px;
   }
 
 
@@ -1836,15 +2021,7 @@ a {
 
   .guide-e27 {
     right: 0;
-    top: 625px;
-  }
-
-  .guide-e27 .guide-entry-primary {
-    font-size: 70px;
-  }
-
-  .guide-e27 .guide-entry-secondary {
-    font-size: 14px;
+    top: 630px;
   }
 
 
@@ -1852,11 +2029,7 @@ a {
 
   .guide-000 {
     left: 0;
-    top: 825px;
-  }
-
-  .guide-000 .guide-entry-primary {
-    font-size: 60px;
+    top: 820px;
   }
 
 
@@ -1864,21 +2037,17 @@ a {
 
   .guide-pan {
     right: 0;
-    top: 1030px;
+    top: 1010px;
 
-    min-width: 150px;
-  }
-
-  .guide-pan .guide-entry-primary {
-    font-size: 58px;
+    min-width: 145px;
   }
 
   .guide-pan::before {
-    width: 230px;
-    height: 230px;
+    width: 220px;
+    height: 220px;
 
-    right: -190px;
-    top: -65px;
+    right: -215px;
+    top: -55px;
   }
 
 
@@ -1887,12 +2056,23 @@ a {
   .guides-index::before {
     left: 50%;
     top: 90px;
-    height: 890px;
+    height: 870px;
   }
 
   .guides-index::after {
     left: 8%;
-    top: 745px;
+    top: 730px;
     width: 84%;
+  }
+
+
+  /* FOOTNOTE */
+
+  .guides-footnote strong {
+    font-size: 11px;
+  }
+
+  .guides-footnote span {
+    font-size: 6px;
   }
 }
