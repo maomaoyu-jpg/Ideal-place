@@ -26,6 +26,7 @@ a {
   border-bottom: 1px solid #c8c6c0;
   display: flex;
   align-items: center;
+
   justify-content: space-between;
   font-size: 9px;
   letter-spacing: 0.18em;
@@ -300,6 +301,215 @@ a {
   }
 
   .home-index-zh {
+    font-size: 9px;
+  }
+}
+/* WORLD */
+
+.world-page {
+  min-height: calc(100vh - 58px);
+  padding: 8vh 8vw 12vh;
+  overflow: hidden;
+}
+
+.world-hero {
+  position: relative;
+  min-height: 480px;
+  padding-top: 20px;
+  border-bottom: 1px solid #aaa;
+}
+
+.world-heading {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: 1.4fr 0.6fr;
+  align-items: end;
+  gap: 40px;
+  margin-top: 65px;
+}
+
+.world-heading h1 {
+  margin: 0;
+  font-size: clamp(90px, 16vw, 210px);
+  line-height: 0.72;
+  letter-spacing: -0.075em;
+  font-weight: 400;
+}
+
+.world-intro {
+  max-width: 240px;
+  margin: 0 0 8px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 13px;
+  line-height: 1.9;
+  letter-spacing: 0.08em;
+}
+
+/* abstract archive diagram */
+
+.world-orbit {
+  position: absolute;
+  z-index: 1;
+  width: 340px;
+  height: 340px;
+  right: 2vw;
+  top: 15px;
+  opacity: 0.42;
+  pointer-events: none;
+}
+
+.orbit {
+  position: absolute;
+  border: 1px solid #9c9a94;
+  border-radius: 50%;
+}
+
+.orbit-one {
+  width: 260px;
+  height: 260px;
+  right: 0;
+  top: 0;
+}
+
+.orbit-two {
+  width: 150px;
+  height: 150px;
+  right: 55px;
+  top: 55px;
+}
+
+.orbit-dot {
+  position: absolute;
+  width: 9px;
+  height: 9px;
+  right: 126px;
+  top: 126px;
+  background: #111;
+  border-radius: 50%;
+}
+
+.orbit-line {
+  position: absolute;
+  width: 330px;
+  height: 1px;
+  right: -35px;
+  top: 130px;
+  background: #9c9a94;
+}
+
+/* archive index */
+
+.world-records {
+  margin-top: 55px;
+}
+
+.records-header {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  gap: 30px;
+  padding-bottom: 14px;
+  font-size: 7px;
+  letter-spacing: 0.2em;
+  color: #777;
+}
+
+.record-row {
+  min-height: 92px;
+  display: grid;
+  grid-template-columns: 65px 1fr auto;
+  align-items: center;
+  gap: 20px;
+  border-top: 1px solid #aaa;
+  transition: padding-left 0.25s ease;
+}
+
+.record-row:last-child {
+  border-bottom: 1px solid #aaa;
+}
+
+.record-row:hover {
+  padding-left: 10px;
+}
+
+.record-number {
+  font-size: 8px;
+  letter-spacing: 0.18em;
+  color: #777;
+}
+
+.record-title {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(22px, 3vw, 38px);
+  letter-spacing: -0.02em;
+}
+
+.record-zh {
+  font-size: 10px;
+  letter-spacing: 0.16em;
+  color: #666;
+}
+
+/* WORLD — mobile */
+
+@media (max-width: 700px) {
+  .world-page {
+    padding: 7vh 9vw 10vh;
+  }
+
+  .world-hero {
+    min-height: 390px;
+  }
+
+  .world-heading {
+    display: block;
+    margin-top: 80px;
+  }
+
+  .world-heading h1 {
+    font-size: 22vw;
+  }
+
+  .world-intro {
+    margin-top: 35px;
+    font-size: 12px;
+  }
+
+  .world-orbit {
+    width: 230px;
+    height: 230px;
+    right: -75px;
+    top: 5px;
+    opacity: 0.28;
+    transform: scale(0.72);
+    transform-origin: top right;
+  }
+
+  .world-records {
+    margin-top: 38px;
+  }
+
+  .records-header {
+    grid-template-columns: 1fr auto;
+  }
+
+  .records-header span:nth-child(2) {
+    display: none;
+  }
+
+  .record-row {
+    min-height: 76px;
+    grid-template-columns: 35px 1fr auto;
+    gap: 8px;
+  }
+
+  .record-title {
+    font-size: 20px;
+  }
+
+  .record-zh {
+    max-width: 82px;
+    text-align: right;
     font-size: 9px;
   }
 }
