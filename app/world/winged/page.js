@@ -76,8 +76,8 @@ export default function Winged() {
           </span>
 
           <span className="winged-callout callout-wing">
-            02 / FEATHERED WING
-          </span>
+  <span className="callout-wing-text">02 / FEATHERED WING</span>
+</span>
 
           <span className="winged-callout callout-body">
             03 / HUMANOID BODY
