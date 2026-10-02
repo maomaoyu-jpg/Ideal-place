@@ -2043,8 +2043,7 @@ a {
   .guides-footnote span {
     font-size: 6px;
   }
-}
-/* ========================================
+}/* ========================================
    STORIES — NARRATIVE ARCHIVE
 ======================================== */
 
@@ -2103,7 +2102,12 @@ a {
 }
 
 .stories-heading-bottom strong {
-  font-family: Georgia, "Times New Roman", serif;
+  font-family:
+    "Noto Serif TC",
+    "Songti TC",
+    "PMingLiU",
+    "新細明體",
+    serif;
   font-size: 19px;
   font-weight: 400;
 }
@@ -2138,7 +2142,12 @@ a {
 
 .stories-quote p {
   margin: 0;
-  font-family: Georgia, "Times New Roman", serif;
+  font-family:
+    "Noto Serif TC",
+    "Songti TC",
+    "PMingLiU",
+    "新細明體",
+    serif;
   font-size: 14px;
   line-height: 2;
   letter-spacing: 0.1em;
@@ -2185,13 +2194,20 @@ a {
   color: #888;
 }
 
+/* 中文作品名 */
+
 .story-title {
   display: block;
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(40px, 5.2vw, 67px);
-  line-height: 1;
+  font-family:
+    "Noto Serif TC",
+    "Songti TC",
+    "PMingLiU",
+    "新細明體",
+    serif;
+  font-size: clamp(32px, 4.2vw, 52px);
+  line-height: 1.15;
   font-weight: 400;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.06em;
 }
 
 .story-guide,
@@ -2244,7 +2260,7 @@ a {
   text-align: right;
 }
 
-/* SUBTLE EDITORIAL LINES */
+/* EDITORIAL LINES */
 
 .stories-index::before {
   content: "";
@@ -2357,8 +2373,15 @@ a {
   }
 
   .story-title {
-    font-size: 38px;
-    line-height: 1.05;
+    font-family:
+      "Noto Serif TC",
+      "Songti TC",
+      "PMingLiU",
+      "新細明體",
+      serif;
+    font-size: 31px;
+    line-height: 1.15;
+    letter-spacing: 0.06em;
   }
 
   .story-01 {
