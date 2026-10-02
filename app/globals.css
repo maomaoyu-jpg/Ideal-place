@@ -1355,3 +1355,544 @@ a {
     padding-left: 0;
   }
 }
+/* ========================================
+   GUIDES — PERSONNEL INDEX
+======================================== */
+
+.guides-page {
+  min-height: 100vh;
+  padding: 0 8vw 12vh;
+  overflow: hidden;
+  background: #f2f1ed;
+}
+
+
+/* COVER */
+
+.guides-cover {
+  position: relative;
+  min-height: 590px;
+  padding-top: 8vh;
+  border-bottom: 1px solid #aaa;
+}
+
+.guides-meta {
+  position: relative;
+  z-index: 3;
+
+  display: flex;
+  justify-content: space-between;
+
+  font-size: 8px;
+  letter-spacing: 0.22em;
+  color: #777;
+}
+
+.guides-heading {
+  position: absolute;
+  z-index: 3;
+
+  left: 0;
+  bottom: 90px;
+}
+
+.guides-heading > span {
+  display: block;
+  margin-bottom: 22px;
+
+  font-size: 8px;
+  letter-spacing: 0.22em;
+  color: #666;
+}
+
+.guides-heading h1 {
+  margin: 0;
+
+  font-size: clamp(100px, 17vw, 225px);
+  line-height: 0.68;
+  letter-spacing: -0.085em;
+  font-weight: 400;
+}
+
+.guides-heading-bottom {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+
+  margin-top: 30px;
+}
+
+.guides-heading-bottom strong {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 19px;
+  font-weight: 400;
+}
+
+.guides-heading-bottom span {
+  padding-left: 24px;
+  border-left: 1px solid #999;
+
+  font-size: 7px;
+  letter-spacing: 0.2em;
+  color: #777;
+}
+
+
+/* COVER GRAPHIC */
+
+.guides-cover-mark {
+  position: absolute;
+
+  width: 350px;
+  height: 350px;
+
+  right: -25px;
+  top: 75px;
+
+  opacity: 0.32;
+  pointer-events: none;
+}
+
+.guide-mark-circle {
+  position: absolute;
+
+  width: 210px;
+  height: 210px;
+
+  right: 30px;
+  top: 55px;
+
+  border: 1px solid #888;
+  border-radius: 50%;
+}
+
+.guide-mark-line {
+  position: absolute;
+  display: block;
+  background: #888;
+}
+
+.guide-mark-line-a {
+  width: 330px;
+  height: 1px;
+
+  right: -20px;
+  top: 160px;
+
+  transform: rotate(-18deg);
+}
+
+.guide-mark-line-b {
+  width: 1px;
+  height: 310px;
+
+  right: 135px;
+  top: 0;
+
+  transform: rotate(18deg);
+}
+
+.guide-mark-point {
+  position: absolute;
+
+  width: 9px;
+  height: 9px;
+
+  right: 131px;
+  top: 156px;
+
+  border-radius: 50%;
+  background: #111;
+}
+
+
+/* ========================================
+   GUIDE INDEX
+======================================== */
+
+.guides-index {
+  position: relative;
+
+  height: 1280px;
+  margin-top: 65px;
+}
+
+.guides-index-meta {
+  display: flex;
+  justify-content: space-between;
+
+  padding-bottom: 20px;
+  border-bottom: 1px solid #aaa;
+
+  font-size: 7px;
+  letter-spacing: 0.2em;
+  color: #777;
+}
+
+
+/* SHARED ENTRY */
+
+.guide-entry {
+  position: absolute;
+  z-index: 2;
+
+  display: block;
+
+  transition:
+    transform 0.25s ease,
+    opacity 0.25s ease;
+}
+
+.guide-entry:hover {
+  transform: translateY(-5px);
+}
+
+.guide-entry-number {
+  display: block;
+  margin-bottom: 8px;
+
+  font-size: 8px;
+  letter-spacing: 0.2em;
+  color: #777;
+}
+
+.guide-entry-primary {
+  display: block;
+
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(42px, 6vw, 82px);
+  line-height: 0.88;
+  letter-spacing: -0.05em;
+}
+
+.guide-entry-secondary {
+  display: block;
+  margin-top: 12px;
+
+  font-size: 10px;
+  letter-spacing: 0.16em;
+  color: #555;
+}
+
+.guide-entry-tertiary {
+  display: inline-block;
+  margin-top: 7px;
+
+  font-size: 7px;
+  letter-spacing: 0.22em;
+  color: #888;
+}
+
+.guide-entry-location {
+  display: block;
+  margin-top: 18px;
+
+  font-size: 6px;
+  letter-spacing: 0.22em;
+  color: #aaa;
+}
+
+
+/* ========================================
+   INDIVIDUAL POSITIONS
+======================================== */
+
+/* Hitar */
+
+.guide-hitar {
+  left: 2%;
+  top: 125px;
+}
+
+.guide-hitar .guide-entry-primary {
+  font-size: clamp(64px, 9vw, 120px);
+}
+
+
+/* Frey */
+
+.guide-frey {
+  right: 5%;
+  top: 245px;
+  text-align: right;
+}
+
+
+/* Rei */
+
+.guide-rei {
+  left: 30%;
+  top: 430px;
+}
+
+
+/* E27 */
+
+.guide-e27 {
+  right: 3%;
+  top: 600px;
+  text-align: right;
+}
+
+.guide-e27 .guide-entry-primary {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: clamp(70px, 10vw, 135px);
+  letter-spacing: -0.07em;
+}
+
+.guide-e27 .guide-entry-secondary {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 17px;
+}
+
+
+/* 000 */
+
+.guide-000 {
+  left: 7%;
+  top: 810px;
+}
+
+.guide-000 .guide-entry-primary {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: clamp(58px, 8vw, 105px);
+  letter-spacing: -0.065em;
+}
+
+
+/* Pan */
+
+.guide-pan {
+  right: 5%;
+  top: 1030px;
+
+  min-width: 210px;
+
+  text-align: right;
+}
+
+.guide-pan::before {
+  content: "";
+
+  position: absolute;
+  z-index: -1;
+
+  width: 300px;
+  height: 300px;
+
+  right: -215px;
+  top: -95px;
+
+  border-radius: 50%;
+  background: #111;
+}
+
+.guide-pan .guide-entry-primary {
+  font-size: clamp(58px, 8vw, 105px);
+}
+
+.guide-id-struck {
+  position: relative;
+  text-decoration: line-through;
+  text-decoration-thickness: 1px;
+}
+
+
+/* CONSTRUCTION LINE */
+
+.guides-index::before {
+  content: "";
+
+  position: absolute;
+
+  left: 50%;
+  top: 100px;
+
+  width: 1px;
+  height: 900px;
+
+  background: #d0cec8;
+}
+
+.guides-index::after {
+  content: "";
+
+  position: absolute;
+
+  left: 18%;
+  top: 705px;
+
+  width: 64%;
+  height: 1px;
+
+  background: #d0cec8;
+}
+
+
+/* FOOTNOTE */
+
+.guides-footnote {
+  position: absolute;
+
+  left: 50%;
+  bottom: 15px;
+
+  transform: translateX(-50%);
+
+  white-space: nowrap;
+
+  font-size: 7px;
+  letter-spacing: 0.2em;
+  color: #aaa;
+}
+
+
+/* ========================================
+   GUIDES — MOBILE
+======================================== */
+
+@media (max-width: 700px) {
+
+  .guides-page {
+    padding: 0 9vw 10vh;
+  }
+
+  .guides-cover {
+    min-height: 550px;
+    padding-top: 7vh;
+  }
+
+  .guides-heading {
+    bottom: 95px;
+  }
+
+  .guides-heading h1 {
+    font-size: 21vw;
+  }
+
+  .guides-heading-bottom strong {
+    font-size: 16px;
+  }
+
+  .guides-cover-mark {
+    width: 240px;
+    height: 240px;
+
+    right: -105px;
+    top: 95px;
+
+    transform: scale(0.78);
+    transform-origin: top right;
+
+    opacity: 0.25;
+  }
+
+
+  /* INDEX */
+
+  .guides-index {
+    height: 1240px;
+    margin-top: 45px;
+  }
+
+  .guide-entry-primary {
+    font-size: 43px;
+  }
+
+  .guide-entry-secondary {
+    font-size: 9px;
+  }
+
+
+  /* Hitar */
+
+  .guide-hitar {
+    left: 0;
+    top: 120px;
+  }
+
+  .guide-hitar .guide-entry-primary {
+    font-size: 62px;
+  }
+
+
+  /* Frey */
+
+  .guide-frey {
+    right: 0;
+    top: 290px;
+  }
+
+
+  /* Rei */
+
+  .guide-rei {
+    left: 17%;
+    top: 455px;
+  }
+
+
+  /* E27 */
+
+  .guide-e27 {
+    right: 0;
+    top: 625px;
+  }
+
+  .guide-e27 .guide-entry-primary {
+    font-size: 70px;
+  }
+
+  .guide-e27 .guide-entry-secondary {
+    font-size: 14px;
+  }
+
+
+  /* 000 */
+
+  .guide-000 {
+    left: 0;
+    top: 825px;
+  }
+
+  .guide-000 .guide-entry-primary {
+    font-size: 60px;
+  }
+
+
+  /* Pan */
+
+  .guide-pan {
+    right: 0;
+    top: 1030px;
+
+    min-width: 150px;
+  }
+
+  .guide-pan .guide-entry-primary {
+    font-size: 58px;
+  }
+
+  .guide-pan::before {
+    width: 230px;
+    height: 230px;
+
+    right: -190px;
+    top: -65px;
+  }
+
+
+  /* LINES */
+
+  .guides-index::before {
+    left: 50%;
+    top: 90px;
+    height: 890px;
+  }
+
+  .guides-index::after {
+    left: 8%;
+    top: 745px;
+    width: 84%;
+  }
+}
