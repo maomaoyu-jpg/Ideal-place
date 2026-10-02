@@ -5,7 +5,7 @@ const sections = [
     number: "01",
     title: "WORLD",
     zh: "理想國",
-    verdict: "歡迎來到理想國⊹₊⟡",
+    verdict: "如夢似幻，完美的理想鄉⋯⋯？",
     href: "/world",
   },
   {
@@ -42,7 +42,7 @@ export default function Home() {
         PLACE
       </h1>
 
-      <p className="hero-text">如夢似幻，完美的理想鄉……</p>
+      <p className="hero-text">歡迎來到理想國⊹₊⟡</p>
 
       <nav className="home-index">
         {sections.map((section) => (
