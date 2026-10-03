@@ -2700,3 +2700,579 @@ a {
     display: none;
   }
 }
+/* ========================================
+   WORLD / SOCIETY
+======================================== */
+
+.society-page {
+  overflow: hidden;
+  background: #f2f1ed;
+  color: #111;
+}
+
+/* HERO */
+
+.society-hero {
+  position: relative;
+  min-height: 780px;
+  padding: 80px max(9vw, 34px) 110px;
+  border-bottom: 1px solid #aaa;
+}
+
+.society-meta,
+.society-section-meta {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #aaa;
+  font-size: 8px;
+  letter-spacing: 0.2em;
+  color: #666;
+}
+
+.society-heading {
+  position: relative;
+  z-index: 2;
+  margin-top: 82px;
+}
+
+.society-heading > span {
+  font-size: 8px;
+  letter-spacing: 0.22em;
+  color: #666;
+}
+
+.society-heading h1 {
+  margin: 14px 0 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(105px, 17vw, 220px);
+  font-weight: 400;
+  line-height: 0.66;
+  letter-spacing: -0.08em;
+}
+
+.society-heading-bottom {
+  display: flex;
+  align-items: baseline;
+  gap: 24px;
+  margin-top: 42px;
+}
+
+.society-heading-bottom strong {
+  font-family: "Noto Serif TC", "Songti TC", "PMingLiU", serif;
+  font-size: 28px;
+  font-weight: 400;
+}
+
+.society-heading-bottom span {
+  padding-left: 24px;
+  border-left: 1px solid #999;
+  font-size: 8px;
+  letter-spacing: 0.18em;
+  color: #666;
+}
+
+.society-hero-scale {
+  position: absolute;
+  right: 8vw;
+  top: 180px;
+  width: min(330px, 28vw);
+  height: 430px;
+  border-left: 1px solid #aaa;
+}
+
+.society-hero-scale::before {
+  content: "";
+  position: absolute;
+  left: -70px;
+  top: 50%;
+  width: 140px;
+  height: 1px;
+  background: #aaa;
+}
+
+.society-hero-scale span {
+  position: absolute;
+  right: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  color: transparent;
+  -webkit-text-stroke: 1px #aaa;
+  line-height: 1;
+}
+
+.society-hero-scale span:nth-child(1) {
+  top: -12px;
+  font-size: 108px;
+}
+
+.society-hero-scale span:nth-child(2) {
+  top: 125px;
+  font-size: 72px;
+}
+
+.society-hero-scale span:nth-child(3) {
+  top: 230px;
+  font-size: 54px;
+}
+
+.society-hero-scale span:nth-child(4) {
+  bottom: 0;
+  font-size: 34px;
+}
+
+/* ARTICLE */
+
+.society-law {
+  position: relative;
+  min-height: 470px;
+  padding: 100px max(9vw, 34px);
+  border-bottom: 1px solid #aaa;
+}
+
+.society-law-meta {
+  display: flex;
+  gap: 28px;
+  font-size: 8px;
+  letter-spacing: 0.2em;
+  color: #777;
+}
+
+.society-law p {
+  width: min(780px, 74%);
+  margin: 75px 0 0;
+  font-family: "Noto Serif TC", "Songti TC", "PMingLiU", serif;
+  font-size: clamp(28px, 4vw, 54px);
+  line-height: 1.55;
+  letter-spacing: 0.05em;
+}
+
+.society-law-index {
+  position: absolute;
+  right: 9vw;
+  bottom: 75px;
+  font-size: 8px;
+  letter-spacing: 0.2em;
+  color: #777;
+}
+
+/* HIERARCHY */
+
+.society-hierarchy {
+  padding: 110px max(9vw, 34px) 150px;
+}
+
+.society-hierarchy-head {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 70px;
+  padding-bottom: 14px;
+  font-size: 7px;
+  letter-spacing: 0.2em;
+  color: #888;
+}
+
+.society-class-list {
+  position: relative;
+  border-top: 1px solid #999;
+}
+
+.society-class {
+  position: relative;
+  display: grid;
+  grid-template-columns: 20% minmax(270px, 1fr) minmax(260px, 0.75fr);
+  align-items: center;
+  min-height: 190px;
+  border-bottom: 1px solid #999;
+}
+
+.society-class-number {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.society-class-number > span {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(62px, 8vw, 110px);
+  line-height: 1;
+  letter-spacing: -0.05em;
+}
+
+.society-class-number small {
+  font-size: 7px;
+  letter-spacing: 0.18em;
+  color: #777;
+}
+
+.society-class-name > span {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 7px;
+  letter-spacing: 0.2em;
+  color: #888;
+}
+
+.society-class-name h2 {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(28px, 3.5vw, 50px);
+  line-height: 0.95;
+  font-weight: 400;
+  letter-spacing: -0.035em;
+}
+
+.society-class-name strong {
+  display: block;
+  margin-top: 12px;
+  font-family: "Noto Serif TC", "Songti TC", "PMingLiU", serif;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.society-class > p {
+  width: min(360px, 100%);
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
+  color: #555;
+}
+
+/* Six wings receives the greatest visual weight. */
+
+.society-rulers {
+  min-height: 255px;
+}
+
+.society-rulers .society-class-number > span {
+  font-size: clamp(92px, 11vw, 155px);
+}
+
+/* Five wings is an appointed position, not a normal step. */
+
+.society-aides {
+  width: 88%;
+  margin-left: 12%;
+}
+
+.society-aides::before {
+  content: "";
+  position: absolute;
+  left: -12%;
+  top: -1px;
+  width: 12%;
+  height: 1px;
+  background: #111;
+}
+
+.society-aides .society-class-number > span {
+  color: transparent;
+  -webkit-text-stroke: 1px #111;
+}
+
+.society-public {
+  min-height: 235px;
+}
+
+.society-public .society-class-number > span {
+  font-size: clamp(78px, 10vw, 140px);
+}
+
+.society-appointment {
+  position: absolute;
+  left: 1%;
+  top: 255px;
+  width: 9%;
+  height: 190px;
+  border-left: 1px solid #777;
+  border-bottom: 1px solid #777;
+  pointer-events: none;
+}
+
+.society-appointment span {
+  position: absolute;
+  left: -5px;
+  bottom: -24px;
+  font-size: 6px;
+  letter-spacing: 0.18em;
+  color: #777;
+}
+
+/* GOVERNMENT */
+
+.society-government {
+  position: relative;
+  min-height: 690px;
+  padding: 100px max(9vw, 34px) 120px;
+  background: #171717;
+  color: #f2f1ed;
+  overflow: hidden;
+}
+
+.society-government-index {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 13px;
+  border-bottom: 1px solid #555;
+  font-size: 8px;
+  letter-spacing: 0.2em;
+  color: #aaa;
+}
+
+.society-government-number {
+  position: absolute;
+  left: 7vw;
+  bottom: -70px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(300px, 42vw, 620px);
+  line-height: 0.7;
+  letter-spacing: -0.08em;
+  color: transparent;
+  -webkit-text-stroke: 1px #555;
+}
+
+.society-government-copy {
+  position: relative;
+  z-index: 2;
+  width: min(430px, 42%);
+  margin: 130px 0 0 auto;
+}
+
+.society-government-copy > span {
+  font-size: 8px;
+  letter-spacing: 0.2em;
+  color: #aaa;
+}
+
+.society-government-copy h2 {
+  margin: 20px 0 28px;
+  font-family: "Noto Serif TC", "Songti TC", "PMingLiU", serif;
+  font-size: clamp(50px, 6vw, 82px);
+  font-weight: 400;
+}
+
+.society-government-copy p {
+  font-size: 13px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: #bbb;
+}
+
+.society-five-marks {
+  position: absolute;
+  z-index: 2;
+  right: 9vw;
+  bottom: 75px;
+  display: flex;
+  gap: 12px;
+}
+
+.society-five-marks i {
+  display: block;
+  width: 9px;
+  height: 9px;
+  border: 1px solid #aaa;
+  border-radius: 50%;
+}
+
+/* FOOTER */
+
+.society-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 45px max(9vw, 34px) 70px;
+  background: #171717;
+  color: #aaa;
+  border-top: 1px solid #444;
+}
+
+.society-footer a {
+  font-size: 8px;
+  letter-spacing: 0.18em;
+}
+
+/* ========================================
+   SOCIETY — TABLET
+======================================== */
+
+@media (min-width: 701px) and (max-width: 1180px) {
+  .society-hero-scale {
+    right: 5vw;
+    width: 25vw;
+    opacity: 0.65;
+  }
+
+  .society-class {
+    grid-template-columns: 18% minmax(220px, 1fr) minmax(220px, 0.8fr);
+    gap: 22px;
+  }
+
+  .society-aides {
+    width: 94%;
+    margin-left: 6%;
+  }
+
+  .society-government-copy {
+    width: 46%;
+  }
+}
+
+/* ========================================
+   SOCIETY — MOBILE
+======================================== */
+
+@media (max-width: 700px) {
+  .society-hero {
+    min-height: 690px;
+    padding: 55px 9vw 90px;
+  }
+
+  .society-heading {
+    margin-top: 65px;
+  }
+
+  .society-heading h1 {
+    font-size: 24vw;
+    line-height: 0.68;
+  }
+
+  .society-heading-bottom {
+    margin-top: 34px;
+  }
+
+  .society-heading-bottom strong {
+    font-size: 23px;
+  }
+
+  .society-hero-scale {
+    width: 42vw;
+    height: 290px;
+    right: -5vw;
+    top: 315px;
+    opacity: 0.55;
+  }
+
+  .society-hero-scale span:nth-child(1) {
+    font-size: 75px;
+  }
+
+  .society-hero-scale span:nth-child(2) {
+    top: 88px;
+    font-size: 53px;
+  }
+
+  .society-hero-scale span:nth-child(3) {
+    top: 166px;
+    font-size: 40px;
+  }
+
+  .society-hero-scale span:nth-child(4) {
+    font-size: 27px;
+  }
+
+  .society-law {
+    min-height: 440px;
+    padding: 80px 9vw;
+  }
+
+  .society-law p {
+    width: 94%;
+    margin-top: 65px;
+    font-size: 27px;
+    line-height: 1.65;
+  }
+
+  .society-law-index {
+    right: 9vw;
+    bottom: 55px;
+  }
+
+  .society-hierarchy {
+    padding: 80px 9vw 110px;
+  }
+
+  .society-hierarchy-head {
+    margin-top: 55px;
+  }
+
+  .society-class {
+    display: grid;
+    grid-template-columns: 90px minmax(0, 1fr);
+    gap: 8px 18px;
+    min-height: 205px;
+    padding: 28px 0;
+  }
+
+  .society-class-number {
+    align-self: start;
+  }
+
+  .society-class-number > span,
+  .society-rulers .society-class-number > span,
+  .society-public .society-class-number > span {
+    font-size: 66px;
+  }
+
+  .society-class-name h2 {
+    font-size: 27px;
+  }
+
+  .society-class-name strong {
+    font-size: 12px;
+  }
+
+  .society-class > p {
+    grid-column: 2;
+    width: 100%;
+    font-size: 11px;
+    line-height: 1.8;
+  }
+
+  .society-aides {
+    width: 92%;
+    margin-left: 8%;
+  }
+
+  .society-aides::before {
+    left: -9%;
+    width: 9%;
+  }
+
+  .society-appointment {
+    display: none;
+  }
+
+  .society-government {
+    min-height: 610px;
+    padding: 80px 9vw 100px;
+  }
+
+  .society-government-number {
+    left: -7vw;
+    bottom: -15px;
+    font-size: 92vw;
+  }
+
+  .society-government-copy {
+    width: 76%;
+    margin: 110px 0 0 auto;
+  }
+
+  .society-government-copy h2 {
+    font-size: 15vw;
+  }
+
+  .society-five-marks {
+    right: 9vw;
+    bottom: 60px;
+  }
+
+  .society-footer {
+    gap: 25px;
+    padding: 35px 9vw 55px;
+  }
+
+  .society-footer a:last-child {
+    text-align: right;
+  }
+}
