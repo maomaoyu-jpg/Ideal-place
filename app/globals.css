@@ -4438,3 +4438,166 @@ a {
     filter: none;
   }
 }
+/* ========================================
+   FAITH — HERO + ARTICLE 02 CORRECTION
+   Reference: user mockup
+======================================== */
+
+/* HERO — title should use the same serif language
+   as the other major archive headings */
+.faith-hero-title h1 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 400;
+}
+
+/* HERO — flip the whole three-angel artwork */
+.faith-hero-angel {
+  transform: scaleX(-1);
+  transform-origin: center;
+}
+
+
+/* ========================================
+   ARTICLE 02
+   Hand should enter horizontally from right,
+   matching the composition mockup.
+======================================== */
+
+.faith-crosshair {
+  z-index: 4;
+}
+
+.faith-statue {
+  z-index: 5;
+  filter: none;
+}
+
+.faith-reach {
+  z-index: 8;
+  filter: none;
+
+  width: min(370px, 29vw);
+  max-height: none;
+
+  right: -1vw;
+  top: 300px;
+
+  transform: rotate(90deg);
+  transform-origin: center;
+}
+
+
+/* ========================================
+   ARTICLE 04
+   Keep original scale; move angel upward.
+======================================== */
+
+.faith-frame-angel {
+  width: 64%;
+  max-height: 650px;
+  right: 0;
+  bottom: 15%;
+  object-fit: contain;
+  filter: none;
+}
+
+
+/* ========================================
+   TABLET / IPAD
+======================================== */
+
+@media (min-width: 701px) and (max-width: 1180px) {
+
+  /* ARTICLE 01 */
+  .faith-hand-composition {
+    width: 52vw;
+    right: 1vw;
+    top: 240px;
+  }
+
+  .faith-hand {
+    right: 3%;
+    top: 42px;
+  }
+
+  /* ARTICLE 02 — horizontal hand */
+  .faith-reach {
+    width: 31vw;
+    max-height: none;
+
+    right: -3vw;
+    top: 300px;
+
+    transform: rotate(90deg);
+    transform-origin: center;
+  }
+
+  .crosshair-a {
+    left: 43%;
+    top: 235px;
+    z-index: 4;
+  }
+
+  .faith-statue {
+    z-index: 5;
+  }
+
+  /* ARTICLE 04 */
+  .faith-frame-art {
+    width: 60vw;
+    right: -5vw;
+  }
+
+  .faith-frame-angel {
+    width: 64%;
+    right: 0;
+    bottom: 15%;
+  }
+}
+
+
+/* ========================================
+   MOBILE / IPHONE
+======================================== */
+
+@media (max-width: 700px) {
+
+  /* Keep FAITH typography consistent */
+  .faith-hero-title h1 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: 400;
+  }
+
+  /* ARTICLE 02
+     Same idea as desktop: horizontal hand,
+     recomposed for narrow viewport. */
+  .faith-reach {
+    width: 155px;
+    max-height: none;
+
+    right: -8px;
+    top: 350px;
+
+    transform: rotate(90deg);
+    transform-origin: center;
+  }
+
+  /* Statue stays where it is */
+  .faith-statue {
+    z-index: 5;
+  }
+
+  /* Crosshair only moves left + behind statue */
+  .crosshair-a {
+    left: 43%;
+    top: 190px;
+    z-index: 4;
+  }
+
+  /* ARTICLE 04 */
+  .faith-frame-angel {
+    width: 66%;
+    right: 0;
+    bottom: 15%;
+  }
+}
