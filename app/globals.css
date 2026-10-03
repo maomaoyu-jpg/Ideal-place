@@ -4601,3 +4601,95 @@ a {
     bottom: 15%;
   }
 }
+/* ========================================
+   FAITH — COMPOSITION FIX 03
+   ======================================== */
+
+
+/* ARTICLE 02
+   Hand enters FROM RIGHT and reaches LEFT,
+   following the supplied composition mockup.
+---------------------------------------- */
+
+.faith-reach {
+  filter: none;
+  z-index: 8;
+  transform: rotate(90deg) scaleX(-1);
+  transform-origin: center;
+}
+
+
+/* TABLET / IPAD */
+@media (min-width: 701px) and (max-width: 1180px) {
+  .faith-reach {
+    width: 31vw;
+    max-height: none;
+
+    /* wrist remains outside/right,
+       fingers reach toward the statue */
+    right: -3vw;
+    top: 300px;
+
+    transform: rotate(90deg) scaleX(-1);
+  }
+}
+
+
+/* MOBILE / IPHONE */
+@media (max-width: 700px) {
+  .faith-reach {
+    width: 155px;
+    max-height: none;
+
+    right: -8px;
+    top: 350px;
+
+    transform: rotate(90deg) scaleX(-1);
+  }
+}
+
+
+/* ----------------------------------------
+   ARTICLE 04
+   Move the angel INTO the frame opening.
+   Keep it behind the physical frame.
+---------------------------------------- */
+
+.faith-frame-angel {
+  z-index: 3;
+
+  width: 58%;
+  max-height: 650px;
+
+  /* move left + upward into frame */
+  right: 15%;
+  bottom: 21%;
+
+  object-fit: contain;
+  filter: none;
+}
+
+/* physical frame stays in front */
+.faith-frame {
+  z-index: 5;
+}
+
+
+/* TABLET / IPAD */
+@media (min-width: 701px) and (max-width: 1180px) {
+  .faith-frame-angel {
+    width: 58%;
+    right: 15%;
+    bottom: 21%;
+  }
+}
+
+
+/* MOBILE / IPHONE */
+@media (max-width: 700px) {
+  .faith-frame-angel {
+    width: 62%;
+    right: 13%;
+    bottom: 20%;
+  }
+}
