@@ -3774,3 +3774,772 @@ a {
     bottom: 55px;
   }
 }
+/* ========================================
+   WORLD / FAITH
+======================================== */
+
+.faith-page {
+  overflow: hidden;
+  background: #f2f1ed;
+  color: #111;
+}
+
+.faith-meta,
+.faith-section-meta {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #aaa;
+  font-size: 8px;
+  letter-spacing: 0.2em;
+  color: #666;
+}
+
+/* HERO */
+
+.faith-hero {
+  position: relative;
+  min-height: 940px;
+  padding: 80px max(9vw, 34px) 110px;
+}
+
+.faith-heading {
+  position: relative;
+  z-index: 3;
+  margin-top: 90px;
+}
+
+.faith-heading > span {
+  font-size: 8px;
+  letter-spacing: 0.22em;
+}
+
+.faith-heading h1 {
+  margin: 12px 0 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(110px, 18vw, 240px);
+  font-weight: 400;
+  line-height: 0.67;
+  letter-spacing: -0.075em;
+}
+
+.faith-heading-bottom {
+  display: flex;
+  align-items: baseline;
+  gap: 24px;
+  margin-top: 40px;
+}
+
+.faith-heading-bottom strong {
+  font-family: "Noto Serif TC", "Songti TC", "PMingLiU", serif;
+  font-size: 28px;
+  font-weight: 400;
+}
+
+.faith-heading-bottom span {
+  font-size: 8px;
+  letter-spacing: 0.18em;
+  color: #666;
+}
+
+.faith-hero-image {
+  position: absolute;
+  z-index: 1;
+  width: min(520px, 43vw);
+  height: 620px;
+  right: -2vw;
+  top: 150px;
+  overflow: hidden;
+}
+
+.faith-hero-image::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    #f2f1ed 0%,
+    rgba(242, 241, 237, 0.4) 20%,
+    transparent 55%
+  );
+}
+
+.faith-hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(100%);
+  opacity: 0.72;
+}
+
+.faith-opening {
+  position: relative;
+  z-index: 3;
+  width: min(430px, 42%);
+  margin: 125px 0 0 auto;
+  font-family: "Noto Serif TC", "Songti TC", "PMingLiU", serif;
+  font-size: 16px;
+  line-height: 2;
+  letter-spacing: 0.07em;
+}
+
+.faith-crosshair {
+  position: absolute;
+  z-index: 2;
+  left: 51%;
+  top: 420px;
+  width: 190px;
+  height: 190px;
+  opacity: 0.25;
+}
+
+.faith-crosshair span {
+  position: absolute;
+  inset: 0;
+  border: 1px solid #111;
+  border-radius: 50%;
+}
+
+.faith-crosshair::before,
+.faith-crosshair::after {
+  content: "";
+  position: absolute;
+  background: #111;
+}
+
+.faith-crosshair::before {
+  width: 280px;
+  height: 1px;
+  left: -45px;
+  top: 50%;
+}
+
+.faith-crosshair::after {
+  width: 1px;
+  height: 280px;
+  left: 50%;
+  top: -45px;
+}
+
+.faith-crosshair i {
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  left: 50%;
+  top: 50%;
+  border-radius: 50%;
+  background: #111;
+  transform: translate(-50%, -50%);
+}
+
+/* BELIEF */
+
+.faith-belief {
+  position: relative;
+  min-height: 1050px;
+  padding: 100px max(9vw, 34px) 130px;
+  border-top: 1px solid #aaa;
+}
+
+.faith-belief-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8vw;
+  margin-top: 75px;
+}
+
+.faith-belief-title > span {
+  font-size: 8px;
+  letter-spacing: 0.2em;
+  color: #777;
+}
+
+.faith-belief-title h2 {
+  margin: 25px 0 0;
+  font-family: "Noto Serif TC", "Songti TC", "PMingLiU", serif;
+  font-size: clamp(50px, 7vw, 94px);
+  line-height: 1.15;
+  font-weight: 400;
+}
+
+.faith-belief-copy {
+  padding-top: 45px;
+}
+
+.faith-belief-copy p {
+  width: min(430px, 100%);
+  margin: 0 0 24px;
+  font-size: 13px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: #444;
+}
+
+.faith-cross-figure {
+  position: relative;
+  width: 68%;
+  margin: 105px 0 0 auto;
+}
+
+.faith-cross-image {
+  height: 480px;
+  overflow: hidden;
+}
+
+.faith-cross-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  filter: grayscale(100%);
+}
+
+.faith-cross-figure figcaption {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding-top: 12px;
+  border-top: 1px solid #999;
+  font-size: 7px;
+  letter-spacing: 0.16em;
+  color: #777;
+}
+
+/* DOCTRINE */
+
+.faith-doctrine {
+  padding: 110px max(9vw, 34px) 140px;
+  border-top: 1px solid #aaa;
+}
+
+.faith-doctrine-heading {
+  position: relative;
+  margin-top: 80px;
+}
+
+.faith-doctrine-heading > span {
+  display: block;
+  font-size: 8px;
+  letter-spacing: 0.2em;
+  color: #777;
+}
+
+.faith-doctrine-heading h2 {
+  margin: 16px 0 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(90px, 14vw, 190px);
+  font-weight: 400;
+  line-height: 0.72;
+  letter-spacing: -0.065em;
+}
+
+.faith-doctrine-heading strong {
+  display: block;
+  width: max-content;
+  margin: 30px 8% 0 auto;
+  font-family: "Noto Serif TC", "Songti TC", "PMingLiU", serif;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.faith-doctrine-list {
+  margin-top: 100px;
+  border-top: 1px solid #999;
+}
+
+.faith-doctrine-item {
+  display: grid;
+  grid-template-columns: 70px 250px minmax(0, 1fr);
+  gap: 30px;
+  align-items: start;
+  padding: 42px 0;
+  border-bottom: 1px solid #999;
+}
+
+.faith-doctrine-number {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 44px;
+  line-height: 1;
+}
+
+.faith-doctrine-name span {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 7px;
+  letter-spacing: 0.18em;
+  color: #777;
+}
+
+.faith-doctrine-name strong {
+  font-family: "Noto Serif TC", "Songti TC", "PMingLiU", serif;
+  font-size: 25px;
+  font-weight: 400;
+}
+
+.faith-doctrine-item p {
+  width: min(500px, 100%);
+  margin: 0 0 0 auto;
+  font-size: 13px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: #444;
+}
+
+/* ANGEL */
+
+.faith-angel {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  min-height: 900px;
+  border-top: 1px solid #aaa;
+}
+
+.faith-angel-image {
+  position: relative;
+  min-height: 900px;
+  overflow: hidden;
+}
+
+.faith-angel-image::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    transparent 60%,
+    rgba(17, 17, 17, 0.35) 100%
+  );
+}
+
+.faith-angel-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(100%);
+}
+
+.faith-angel-label {
+  position: absolute;
+  z-index: 2;
+  left: 30px;
+  bottom: 25px;
+  font-size: 7px;
+  letter-spacing: 0.18em;
+  color: #f2f1ed;
+}
+
+.faith-angel-copy {
+  padding: 110px 8vw 90px 7vw;
+}
+
+.faith-angel-copy > span {
+  font-size: 8px;
+  letter-spacing: 0.2em;
+  color: #777;
+}
+
+.faith-angel-copy h2 {
+  margin: 90px 0 65px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(72px, 9vw, 130px);
+  font-weight: 400;
+  line-height: 0.72;
+  letter-spacing: -0.055em;
+}
+
+.faith-angel-copy h2 em {
+  display: block;
+  margin-top: 28px;
+  font-family: "Noto Serif TC", "Songti TC", "PMingLiU", serif;
+  font-size: 32px;
+  font-style: normal;
+  letter-spacing: 0.08em;
+}
+
+.faith-angel-copy p {
+  font-size: 13px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: #444;
+}
+
+.faith-record-link {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 55px;
+  padding: 14px 0;
+  border-top: 1px solid #999;
+  border-bottom: 1px solid #999;
+  font-size: 8px;
+  letter-spacing: 0.18em;
+}
+
+/* DARK INSTITUTION */
+
+.faith-institution {
+  position: relative;
+  min-height: 1050px;
+  padding: 100px max(9vw, 34px) 140px;
+  overflow: hidden;
+  background: #171717;
+  color: #f2f1ed;
+}
+
+.faith-section-meta-dark {
+  position: relative;
+  z-index: 3;
+  border-color: #555;
+  color: #aaa;
+}
+
+.faith-institution-heading {
+  position: relative;
+  z-index: 3;
+  margin-top: 80px;
+}
+
+.faith-institution-heading > span {
+  font-size: 8px;
+  letter-spacing: 0.2em;
+  color: #aaa;
+}
+
+.faith-institution-heading h2 {
+  margin: 18px 0 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(92px, 14vw, 190px);
+  font-weight: 400;
+  line-height: 0.73;
+  letter-spacing: -0.065em;
+}
+
+.faith-institution-image {
+  position: absolute;
+  z-index: 1;
+  width: 42%;
+  height: 790px;
+  right: 5%;
+  top: 175px;
+  overflow: hidden;
+}
+
+.faith-institution-image::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to left,
+    transparent 45%,
+    #171717 100%
+  );
+}
+
+.faith-institution-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(100%) contrast(1.1);
+  opacity: 0.7;
+}
+
+.faith-institution-copy {
+  position: relative;
+  z-index: 3;
+  width: min(440px, 42%);
+  margin-top: 130px;
+}
+
+.faith-institution-copy strong {
+  display: block;
+  margin-bottom: 32px;
+  font-family: "Noto Serif TC", "Songti TC", "PMingLiU", serif;
+  font-size: 21px;
+  font-weight: 400;
+}
+
+.faith-institution-copy p {
+  font-size: 13px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: #bbb;
+}
+
+.faith-institution-mark {
+  position: absolute;
+  z-index: 2;
+  right: -2vw;
+  bottom: -4vw;
+}
+
+.faith-institution-mark span {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 34vw;
+  line-height: 0.7;
+  color: transparent;
+  -webkit-text-stroke: 1px #444;
+}
+
+/* RELATED */
+
+.faith-related {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 40px;
+  padding: 90px max(9vw, 34px);
+}
+
+.faith-related > div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.faith-related > div > span,
+.faith-related small,
+.faith-related > a {
+  font-size: 8px;
+  letter-spacing: 0.18em;
+  color: #777;
+}
+
+.faith-related strong {
+  font-family: "Noto Serif TC", "Songti TC", "PMingLiU", serif;
+  font-size: 36px;
+  font-weight: 400;
+}
+
+.faith-related > a {
+  padding-bottom: 8px;
+  border-bottom: 1px solid #999;
+}
+
+.faith-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px max(9vw, 34px) 65px;
+  border-top: 1px solid #aaa;
+  font-size: 8px;
+  letter-spacing: 0.18em;
+  color: #777;
+}
+
+/* ========================================
+   WORLD / FAITH — MOBILE
+======================================== */
+
+@media (max-width: 700px) {
+  .faith-hero {
+    min-height: 920px;
+    padding: 55px 9vw 90px;
+  }
+
+  .faith-heading {
+    margin-top: 65px;
+  }
+
+  .faith-heading h1 {
+    font-size: 27vw;
+  }
+
+  .faith-heading-bottom {
+    margin-top: 32px;
+  }
+
+  .faith-heading-bottom strong {
+    font-size: 24px;
+  }
+
+  .faith-hero-image {
+    width: 72vw;
+    height: 460px;
+    right: -19vw;
+    top: 310px;
+  }
+
+  .faith-crosshair {
+    width: 115px;
+    height: 115px;
+    left: 17%;
+    top: 420px;
+  }
+
+  .faith-crosshair::before {
+    width: 170px;
+    left: -27px;
+  }
+
+  .faith-crosshair::after {
+    height: 170px;
+    top: -27px;
+  }
+
+  .faith-opening {
+    width: 66%;
+    margin: 445px 0 0;
+    font-size: 13px;
+  }
+
+  .faith-belief {
+    min-height: auto;
+    padding: 80px 9vw 100px;
+  }
+
+  .faith-belief-grid {
+    display: block;
+    margin-top: 55px;
+  }
+
+  .faith-belief-title h2 {
+    font-size: 13vw;
+  }
+
+  .faith-belief-copy {
+    width: 82%;
+    margin-left: auto;
+    padding-top: 55px;
+  }
+
+  .faith-belief-copy p {
+    font-size: 12px;
+  }
+
+  .faith-cross-figure {
+    width: 108%;
+    margin: 75px 0 0 -9%;
+  }
+
+  .faith-cross-image {
+    height: 330px;
+  }
+
+  .faith-cross-figure figcaption {
+    margin-left: 9%;
+    font-size: 6px;
+  }
+
+  .faith-doctrine {
+    padding: 80px 9vw 100px;
+  }
+
+  .faith-doctrine-heading {
+    margin-top: 55px;
+  }
+
+  .faith-doctrine-heading h2 {
+    font-size: 20vw;
+  }
+
+  .faith-doctrine-heading strong {
+    margin-top: 25px;
+    font-size: 20px;
+  }
+
+  .faith-doctrine-list {
+    margin-top: 70px;
+  }
+
+  .faith-doctrine-item {
+    grid-template-columns: 45px minmax(0, 1fr);
+    gap: 18px;
+    padding: 32px 0;
+  }
+
+  .faith-doctrine-number {
+    font-size: 34px;
+  }
+
+  .faith-doctrine-name strong {
+    font-size: 21px;
+  }
+
+  .faith-doctrine-item p {
+    grid-column: 2;
+    margin-top: 8px;
+    font-size: 12px;
+  }
+
+  .faith-angel {
+    display: block;
+    min-height: 0;
+  }
+
+  .faith-angel-image {
+    min-height: 590px;
+    height: 590px;
+    width: 92%;
+  }
+
+  .faith-angel-copy {
+    padding: 80px 9vw 100px;
+  }
+
+  .faith-angel-copy h2 {
+    margin: 65px 0 55px;
+    font-size: 21vw;
+  }
+
+  .faith-angel-copy h2 em {
+    font-size: 27px;
+  }
+
+  .faith-institution {
+    min-height: 980px;
+    padding: 80px 9vw 110px;
+  }
+
+  .faith-institution-heading {
+    margin-top: 55px;
+  }
+
+  .faith-institution-heading h2 {
+    font-size: 20vw;
+  }
+
+  .faith-institution-image {
+    width: 76%;
+    height: 620px;
+    right: -17%;
+    top: 285px;
+  }
+
+  .faith-institution-copy {
+    width: 66%;
+    margin-top: 385px;
+  }
+
+  .faith-institution-copy strong {
+    font-size: 18px;
+  }
+
+  .faith-institution-copy p {
+    font-size: 12px;
+  }
+
+  .faith-institution-mark {
+    right: -6vw;
+    bottom: 1vw;
+  }
+
+  .faith-institution-mark span {
+    font-size: 60vw;
+  }
+
+  .faith-related {
+    display: block;
+    padding: 70px 9vw 80px;
+  }
+
+  .faith-related strong {
+    font-size: 30px;
+  }
+
+  .faith-related > a {
+    display: block;
+    margin-top: 55px;
+  }
+
+  .faith-footer {
+    padding: 35px 9vw 55px;
+  }
+}
