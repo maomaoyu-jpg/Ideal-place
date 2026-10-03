@@ -112,7 +112,7 @@ export default function Faith() {
 
           <img
             className="faith-statue"
-            src="/images/world/winged/IMG_1404.png"
+            src="/images/world/winged/IMG_1404.PNG"
             alt="天使雕像"
           />
 
@@ -121,6 +121,13 @@ export default function Faith() {
             src="/images/world/winged/IMG_16.PNG"
             alt=""
           />
+
+          {/* decorative waves around the cropped hand */}
+          <div className="faith-reach-waves" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
 
           <div className="faith-orbit orbit-a"></div>
           <div className="faith-orbit orbit-b"></div>
@@ -157,11 +164,13 @@ export default function Faith() {
 
         <div className="faith-doctrine-head">
           <span>ARTICLE / 03</span>
+
           <h2>
             DOCTRINE
             <br />
             &amp; ORDER
           </h2>
+
           <strong>教義與秩序</strong>
         </div>
 
@@ -186,7 +195,7 @@ export default function Faith() {
 
         <img
           className="faith-feather"
-          src="/images/world/winged/IMG_4505.JPG"
+          src="/images/world/winged/IMG_4505.jpeg"
           alt="羽毛紋理"
         />
 
@@ -257,7 +266,9 @@ export default function Faith() {
 
       <nav className="faith-nav">
         <Link href="/world">← WORLD INDEX</Link>
-        <Link href="/world/education">NEXT RECORD — 05 / EDUCATION →</Link>
+        <Link href="/world/education">
+          NEXT RECORD — 05 / EDUCATION →
+        </Link>
       </nav>
     </main>
   );
