@@ -4271,3 +4271,170 @@ a {
   .faith-context-note p { font-size: 10px; }
   .faith-nav { padding: 30px 24px 48px; gap: 20px; font-size: 6px; }
 }
+/* ========================================
+   FAITH — ANNOTATION FIX
+   2026-10-03
+   ======================================== */
+
+/* ----------------------------------------
+   IMAGE COLOR
+   Only ARTICLE 01 / Creation-like hand
+   remains monochrome.
+---------------------------------------- */
+
+.faith-hero-angel,
+.faith-statue,
+.faith-reach,
+.faith-feather,
+.faith-frame-angel {
+  filter: none;
+}
+
+.faith-hand {
+  filter: grayscale(100%) contrast(1.05);
+}
+
+
+/* ----------------------------------------
+   ARTICLE 01
+   Move the Creation-like hand toward
+   the center of the circle.
+---------------------------------------- */
+
+.faith-hand {
+  right: 8%;
+  top: 62px;
+}
+
+
+/* ----------------------------------------
+   ARTICLE 02
+   Crosshair moves left and sits BEHIND
+   the statue.
+---------------------------------------- */
+
+.faith-crosshair {
+  z-index: 4;
+}
+
+.crosshair-a {
+  left: 39%;
+  top: 205px;
+}
+
+/* statue stays above the crosshair */
+.faith-statue {
+  z-index: 5;
+}
+
+/* hand stays in the foreground */
+.faith-reach {
+  z-index: 8;
+}
+
+
+/* ----------------------------------------
+   ARTICLE 04
+   Pull the angel upward and inward
+   so it sits inside the frame.
+---------------------------------------- */
+
+.faith-frame-angel {
+  width: 50%;
+  max-height: 560px;
+  right: 19%;
+  bottom: 16%;
+  filter: none;
+}
+
+
+/* ========================================
+   TABLET / IPAD
+======================================== */
+
+@media (min-width: 701px) and (max-width: 1180px) {
+
+  /* ARTICLE 01 */
+  .faith-hand-composition {
+    width: 52vw;
+    right: -1vw;
+    top: 240px;
+  }
+
+  /* ARTICLE 02 */
+  .crosshair-a {
+    left: 43%;
+    top: 235px;
+    z-index: 4;
+  }
+
+  .faith-statue {
+    z-index: 5;
+    filter: none;
+  }
+
+  .faith-reach {
+    z-index: 8;
+    filter: none;
+  }
+
+  /* ARTICLE 04 */
+  .faith-frame-art {
+    width: 60vw;
+    right: -5vw;
+  }
+
+  .faith-frame-angel {
+    width: 50%;
+    max-height: 560px;
+    right: 19%;
+    bottom: 16%;
+    filter: none;
+  }
+}
+
+
+/* ========================================
+   MOBILE / IPHONE
+======================================== */
+
+@media (max-width: 700px) {
+
+  /* ARTICLE 01
+     Bring the whole hand composition inward. */
+  .faith-hand-composition {
+    width: 105%;
+    height: 350px;
+    right: -10%;
+    top: 520px;
+  }
+
+  /*
+     ARTICLE 02
+     Do NOT move the statue.
+     Move only the crosshair left and behind it.
+  */
+  .faith-statue {
+    z-index: 5;
+    filter: none;
+  }
+
+  .crosshair-a {
+    left: 43%;
+    top: 190px;
+    z-index: 4;
+  }
+
+  .faith-reach {
+    z-index: 8;
+    filter: none;
+  }
+
+  /* ARTICLE 04 */
+  .faith-frame-angel {
+    width: 54%;
+    right: 18%;
+    bottom: 14%;
+    filter: none;
+  }
+}
