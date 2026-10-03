@@ -4543,3 +4543,824 @@ a {
     padding: 35px 9vw 55px;
   }
 }
+/* ========================================
+   FAITH — EDITORIAL COLLAGE
+======================================== */
+
+.faith-page {
+  --faith-blue: #86bfe0;
+  --faith-blue-deep: #477f9e;
+  --faith-paper: #f1f0eb;
+  --faith-black: #151515;
+
+  background: var(--faith-paper);
+  color: var(--faith-black);
+  overflow: hidden;
+}
+
+.faith-page img {
+  display: block;
+}
+
+/* HERO */
+
+.faith-hero {
+  position: relative;
+  min-height: 820px;
+  padding: 80px 7vw;
+  border-bottom: 1px solid #bdbdb8;
+  overflow: hidden;
+}
+
+.faith-meta {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #aaa;
+  font-size: 9px;
+  letter-spacing: .24em;
+}
+
+.faith-hero-title {
+  position: relative;
+  z-index: 5;
+  margin-top: 80px;
+}
+
+.faith-kicker {
+  font-size: 9px;
+  letter-spacing: .25em;
+}
+
+.faith-hero-title h1 {
+  margin: 14px 0 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(120px, 19vw, 280px);
+  font-weight: 400;
+  line-height: .57;
+  letter-spacing: -.09em;
+}
+
+.faith-zh {
+  display: flex;
+  align-items: baseline;
+  gap: 22px;
+  margin-top: 46px;
+}
+
+.faith-zh strong {
+  font-size: 28px;
+  font-weight: 400;
+}
+
+.faith-zh span {
+  font-size: 8px;
+  letter-spacing: .22em;
+}
+
+.faith-blue-disc {
+  position: absolute;
+  width: 430px;
+  height: 430px;
+  right: 9vw;
+  top: 170px;
+  border-radius: 50%;
+  background: var(--faith-blue);
+  opacity: .9;
+}
+
+.faith-hero-angel {
+  position: absolute;
+  z-index: 4;
+  width: min(570px, 46vw);
+  height: auto;
+  right: 2vw;
+  top: 100px;
+  object-fit: contain;
+  filter: saturate(.8);
+}
+
+.faith-hero-note {
+  position: absolute;
+  z-index: 7;
+  right: 7vw;
+  bottom: 88px;
+  display: flex;
+  gap: 15px;
+  align-items: flex-start;
+}
+
+.faith-hero-note > span {
+  font-family: Georgia, serif;
+  font-size: 60px;
+  line-height: .8;
+}
+
+.faith-hero-note p {
+  margin: 0;
+  font-size: 8px;
+  line-height: 1.7;
+  letter-spacing: .2em;
+}
+
+.faith-hero-caption {
+  position: absolute;
+  left: 7vw;
+  bottom: 36px;
+  display: flex;
+  gap: 24px;
+  font-size: 7px;
+  letter-spacing: .18em;
+}
+
+.faith-hero-grid span {
+  position: absolute;
+  background: #bbb;
+  opacity: .5;
+}
+
+.faith-hero-grid span:nth-child(1) {
+  width: 1px;
+  height: 330px;
+  left: 54%;
+  top: 250px;
+}
+
+.faith-hero-grid span:nth-child(2) {
+  width: 360px;
+  height: 1px;
+  left: 43%;
+  top: 390px;
+}
+
+.faith-hero-grid span:nth-child(3) {
+  width: 140px;
+  height: 1px;
+  right: 3%;
+  top: 650px;
+}
+
+/* INTRO */
+
+.faith-intro {
+  position: relative;
+  min-height: 760px;
+  padding: 90px 7vw;
+}
+
+.faith-section-tag,
+.faith-belief-head {
+  display: flex;
+  gap: 32px;
+  font-size: 8px;
+  letter-spacing: .2em;
+}
+
+.faith-intro-title {
+  display: flex;
+  align-items: flex-start;
+  gap: 25px;
+  margin-top: 110px;
+}
+
+.faith-intro-title > span {
+  font-family: Georgia, serif;
+  font-size: 75px;
+  color: var(--faith-blue-deep);
+}
+
+.faith-intro-title h2 {
+  margin: 12px 0 0;
+  font-size: clamp(28px, 4vw, 58px);
+  font-weight: 400;
+  line-height: 1.25;
+}
+
+.faith-intro-copy {
+  width: min(420px, 36vw);
+  margin: 55px 0 0 100px;
+  font-size: 14px;
+  line-height: 2;
+}
+
+.faith-hand-composition {
+  position: absolute;
+  width: 48vw;
+  height: 500px;
+  right: -4vw;
+  top: 140px;
+}
+
+.faith-hand-circle {
+  position: absolute;
+  width: 360px;
+  height: 360px;
+  border: 1px solid var(--faith-blue-deep);
+  border-radius: 50%;
+  left: 20%;
+  top: 40px;
+}
+
+.faith-hand {
+  position: absolute;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.faith-hand-axis {
+  position: absolute;
+  width: 80%;
+  height: 1px;
+  background: var(--faith-blue-deep);
+  top: 51%;
+  left: 0;
+}
+
+.faith-hand-label {
+  position: absolute;
+  right: 8%;
+  bottom: 35px;
+  font-size: 8px;
+  letter-spacing: .22em;
+}
+
+/* BELIEF */
+
+.faith-belief {
+  position: relative;
+  min-height: 900px;
+  padding: 70px 7vw;
+  border-top: 1px solid #bbb;
+  border-bottom: 1px solid #bbb;
+}
+
+.faith-belief-collage {
+  position: relative;
+  height: 620px;
+  margin-top: 50px;
+}
+
+.faith-outline-word {
+  position: absolute;
+  left: -4vw;
+  top: 100px;
+  font-family: Arial, sans-serif;
+  font-size: clamp(110px, 20vw, 300px);
+  font-weight: 300;
+  color: transparent;
+  -webkit-text-stroke: 1px #b6b6b1;
+  letter-spacing: -.07em;
+}
+
+.faith-blue-block {
+  position: absolute;
+  width: 38vw;
+  height: 280px;
+  left: 27%;
+  top: 145px;
+  background: var(--faith-blue);
+}
+
+.faith-statue {
+  position: absolute;
+  z-index: 4;
+  width: min(460px, 36vw);
+  left: 32%;
+  top: 20px;
+}
+
+.faith-reach {
+  position: absolute;
+  z-index: 5;
+  width: min(350px, 29vw);
+  right: -3vw;
+  top: 120px;
+  transform: rotate(-8deg);
+}
+
+.faith-orbit {
+  position: absolute;
+  z-index: 2;
+  border: 1px solid var(--faith-blue-deep);
+  border-radius: 50%;
+}
+
+.orbit-a {
+  width: 500px;
+  height: 190px;
+  left: 24%;
+  top: 200px;
+  transform: rotate(-12deg);
+}
+
+.orbit-b {
+  width: 390px;
+  height: 390px;
+  left: 35%;
+  top: 75px;
+}
+
+.faith-crosshair {
+  position: absolute;
+  z-index: 7;
+  font-size: 28px;
+  font-weight: 200;
+  color: var(--faith-blue-deep);
+}
+
+.crosshair-a {
+  left: 23%;
+  top: 180px;
+}
+
+.crosshair-b {
+  right: 14%;
+  top: 390px;
+}
+
+.faith-belief-label {
+  position: absolute;
+  z-index: 8;
+  left: 4%;
+  bottom: 30px;
+}
+
+.faith-belief-label span {
+  display: block;
+  margin-bottom: 12px;
+  font-size: 8px;
+  letter-spacing: .2em;
+}
+
+.faith-belief-label strong {
+  font-size: 28px;
+  font-weight: 400;
+}
+
+.faith-belief-copy {
+  width: min(380px, 32vw);
+  margin-left: auto;
+  font-size: 13px;
+  line-height: 2;
+}
+
+.faith-small-note {
+  margin-top: 25px;
+  font-size: 8px;
+  letter-spacing: .2em;
+}
+
+/* DOCTRINE */
+
+.faith-doctrine {
+  position: relative;
+  min-height: 820px;
+  padding: 100px 7vw;
+  background: #161616;
+  color: #f1f0eb;
+  overflow: hidden;
+}
+
+.faith-doctrine-number {
+  position: absolute;
+  right: -20px;
+  top: -60px;
+  font-family: Georgia, serif;
+  font-size: 330px;
+  color: transparent;
+  -webkit-text-stroke: 1px #424242;
+}
+
+.faith-doctrine-head {
+  position: relative;
+  z-index: 3;
+}
+
+.faith-doctrine-head > span {
+  font-size: 8px;
+  letter-spacing: .22em;
+}
+
+.faith-doctrine-head h2 {
+  margin: 45px 0 10px;
+  font-family: Georgia, serif;
+  font-size: clamp(62px, 9vw, 130px);
+  font-weight: 400;
+  line-height: .8;
+  letter-spacing: -.05em;
+}
+
+.faith-doctrine-head strong {
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.faith-doctrine-copy {
+  position: relative;
+  z-index: 4;
+  width: min(390px, 31vw);
+  margin: 80px 0 0 8vw;
+  font-size: 13px;
+  line-height: 2;
+}
+
+.faith-feather {
+  position: absolute;
+  width: 45vw;
+  height: 100%;
+  right: 0;
+  top: 0;
+  object-fit: cover;
+  opacity: .45;
+  mix-blend-mode: luminosity;
+}
+
+.faith-feather-caption {
+  position: absolute;
+  z-index: 5;
+  right: 4vw;
+  bottom: 35px;
+  display: flex;
+  gap: 18px;
+  font-size: 7px;
+  letter-spacing: .2em;
+}
+
+.faith-doctrine-lines span {
+  position: absolute;
+  z-index: 2;
+  height: 1px;
+  background: var(--faith-blue);
+  opacity: .7;
+}
+
+.faith-doctrine-lines span:nth-child(1) {
+  width: 38vw;
+  left: 0;
+  top: 56%;
+}
+
+.faith-doctrine-lines span:nth-child(2) {
+  width: 20vw;
+  left: 20%;
+  top: 60%;
+}
+
+.faith-doctrine-lines span:nth-child(3) {
+  width: 12vw;
+  left: 4%;
+  top: 64%;
+}
+
+.faith-doctrine-lines span:nth-child(4) {
+  width: 1px;
+  height: 300px;
+  left: 42%;
+  top: 44%;
+}
+
+/* FRAME */
+
+.faith-frame-section {
+  position: relative;
+  min-height: 880px;
+  padding: 100px 7vw;
+  overflow: hidden;
+}
+
+.faith-frame-giant {
+  position: absolute;
+  left: -35px;
+  top: -50px;
+  font-family: Georgia, serif;
+  font-size: 330px;
+  color: var(--faith-blue);
+  opacity: .22;
+}
+
+.faith-frame-copy {
+  position: relative;
+  z-index: 5;
+  width: 36%;
+}
+
+.faith-frame-copy > span {
+  font-size: 8px;
+  letter-spacing: .22em;
+}
+
+.faith-frame-copy h2 {
+  margin: 80px 0 20px;
+  font-family: Georgia, serif;
+  font-size: clamp(55px, 7vw, 100px);
+  font-weight: 400;
+  line-height: .78;
+  letter-spacing: -.05em;
+}
+
+.faith-frame-copy strong {
+  display: block;
+  margin-bottom: 40px;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.faith-frame-copy p {
+  max-width: 340px;
+  font-size: 13px;
+  line-height: 2;
+}
+
+.faith-frame-art {
+  position: absolute;
+  width: 55vw;
+  height: 700px;
+  right: -4vw;
+  top: 80px;
+}
+
+.faith-frame-blue {
+  position: absolute;
+  width: 62%;
+  height: 62%;
+  left: 12%;
+  top: 18%;
+  background: var(--faith-blue);
+}
+
+.faith-frame {
+  position: absolute;
+  z-index: 4;
+  width: 70%;
+  height: 80%;
+  left: 5%;
+  top: 5%;
+  object-fit: contain;
+}
+
+.faith-frame-angel {
+  position: absolute;
+  z-index: 3;
+  width: 65%;
+  right: 0;
+  bottom: 0;
+}
+
+.faith-frame-mark {
+  position: absolute;
+  z-index: 7;
+  font-family: Georgia, serif;
+}
+
+.mark-one {
+  right: 7%;
+  top: 12%;
+  font-size: 40px;
+  color: var(--faith-blue-deep);
+}
+
+.mark-two {
+  right: 2%;
+  bottom: 8%;
+  font-size: 70px;
+}
+
+/* CONTEXT */
+
+.faith-context-note {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 60px;
+  padding: 55px 7vw;
+  border-top: 1px solid #aaa;
+  border-bottom: 1px solid #aaa;
+}
+
+.faith-context-note > div {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 8px;
+  letter-spacing: .2em;
+}
+
+.faith-context-note p {
+  max-width: 680px;
+  margin: 0;
+  font-size: 11px;
+  line-height: 1.9;
+  color: #555;
+}
+
+.faith-nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 7vw 50px;
+  font-size: 8px;
+  letter-spacing: .18em;
+}
+
+.faith-nav a {
+  color: inherit;
+  text-decoration: none;
+}
+
+
+/* ========================================
+   FAITH — MOBILE
+======================================== */
+
+@media (max-width: 700px) {
+  .faith-hero {
+    min-height: 650px;
+    padding: 55px 24px;
+  }
+
+  .faith-hero-title {
+    margin-top: 65px;
+  }
+
+  .faith-hero-title h1 {
+    font-size: 112px;
+  }
+
+  .faith-zh {
+    margin-top: 32px;
+  }
+
+  .faith-blue-disc {
+    width: 250px;
+    height: 250px;
+    right: -70px;
+    top: 210px;
+  }
+
+  .faith-hero-angel {
+    width: 310px;
+    right: -90px;
+    top: 170px;
+  }
+
+  .faith-hero-note {
+    right: 24px;
+    bottom: 80px;
+  }
+
+  .faith-hero-caption {
+    left: 24px;
+    bottom: 24px;
+    gap: 10px;
+  }
+
+  .faith-intro {
+    min-height: 820px;
+    padding: 65px 24px;
+  }
+
+  .faith-intro-title {
+    margin-top: 70px;
+    gap: 12px;
+  }
+
+  .faith-intro-title > span {
+    font-size: 50px;
+  }
+
+  .faith-intro-title h2 {
+    font-size: 27px;
+  }
+
+  .faith-intro-copy {
+    width: 88%;
+    margin: 35px 0 0;
+  }
+
+  .faith-hand-composition {
+    width: 120%;
+    height: 330px;
+    right: -35%;
+    top: 470px;
+  }
+
+  .faith-hand-circle {
+    width: 230px;
+    height: 230px;
+  }
+
+  .faith-belief {
+    min-height: 820px;
+    padding: 60px 24px;
+  }
+
+  .faith-belief-collage {
+    height: 510px;
+  }
+
+  .faith-outline-word {
+    top: 80px;
+    font-size: 110px;
+  }
+
+  .faith-blue-block {
+    width: 250px;
+    height: 200px;
+    left: 14%;
+    top: 145px;
+  }
+
+  .faith-statue {
+    width: 260px;
+    left: 17%;
+    top: 55px;
+  }
+
+  .faith-reach {
+    width: 190px;
+    right: -70px;
+    top: 210px;
+  }
+
+  .orbit-a {
+    width: 300px;
+    height: 110px;
+    left: 5%;
+  }
+
+  .orbit-b {
+    width: 240px;
+    height: 240px;
+    left: 17%;
+    top: 100px;
+  }
+
+  .faith-belief-copy {
+    width: 100%;
+    margin: 0;
+  }
+
+  .faith-doctrine {
+    min-height: 760px;
+    padding: 70px 24px;
+  }
+
+  .faith-doctrine-number {
+    font-size: 220px;
+  }
+
+  .faith-doctrine-head h2 {
+    margin-top: 40px;
+    font-size: 62px;
+  }
+
+  .faith-doctrine-copy {
+    width: 78%;
+    margin: 70px 0 0;
+  }
+
+  .faith-feather {
+    width: 58%;
+    opacity: .3;
+  }
+
+  .faith-frame-section {
+    min-height: 950px;
+    padding: 70px 24px;
+  }
+
+  .faith-frame-giant {
+    font-size: 200px;
+  }
+
+  .faith-frame-copy {
+    width: 100%;
+  }
+
+  .faith-frame-copy h2 {
+    margin-top: 65px;
+    font-size: 58px;
+  }
+
+  .faith-frame-copy p {
+    width: 78%;
+  }
+
+  .faith-frame-art {
+    width: 125vw;
+    height: 480px;
+    right: -40vw;
+    top: 500px;
+  }
+
+  .faith-context-note {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    padding: 45px 24px;
+  }
+
+  .faith-nav {
+    padding: 28px 24px 45px;
+    gap: 25px;
+  }
+}
