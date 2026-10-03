@@ -2676,3 +2676,27 @@ a {
     padding: 35px 9vw 55px;
   }
 }
+/* 02 / FEATHERED WING — PHONE + TABLET */
+@media (max-width: 1180px) {
+  .callout-wing {
+    top: 36%;
+    left: -15%;
+    right: auto;
+    width: max-content;
+    padding: 0;
+    white-space: nowrap;
+    z-index: 10;
+  }
+
+  .callout-wing::before {
+    left: calc(100% + 8px);
+    right: auto;
+    width: 34px;
+  }
+}
+/* PAN AXIS — PHONE ONLY */
+@media (max-width: 700px) {
+  .winged-dual-axis {
+    display: none;
+  }
+}
