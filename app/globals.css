@@ -4735,6 +4735,27 @@ a {
   }
 }
 
+/* =========================================================
+   FAITH — SCALE / ARTICLE 04 CALIBRATION
+   ========================================================= */
+
+
+/* ---------------------------------------------------------
+   ARTICLE 02
+   Composition approved.
+   Keep all internal positions unchanged.
+   Scale complete composition as one unit.
+--------------------------------------------------------- */
+
+@media (min-width: 701px) and (max-width: 1180px) {
+
+  .faith-belief-collage {
+    transform: scale(0.86);
+    transform-origin: 52% 48%;
+  }
+
+}
+
 
 /* ---------------------------------------------------------
    ARTICLE 04 — iPad calibration
@@ -4742,27 +4763,19 @@ a {
 
 @media (min-width: 701px) and (max-width: 1180px) {
 
-  /*
-     Blue circle only:
-     move right without affecting frame / angel.
-  */
+  /* Blue circle — shifted right */
   .faith-frame-blue {
     left: 15%;
   }
 
-  /*
-     Fine circular line follows the blue circle.
-  */
+
+  /* Fine circular line follows blue circle */
   .faith-frame-art::before {
     left: 13%;
   }
 
 
-  /*
-     Frame:
-     slightly left/down + slight clockwise tilt,
-     closer to supplied mockup.
-  */
+  /* Wooden frame — clockwise 3 degrees */
   .faith-frame {
     left: 21%;
     top: 9%;
@@ -4774,8 +4787,8 @@ a {
 
   /*
      Angel:
-     move left and slightly up relative to frame.
-     Keep horizontal flip and keep angel ABOVE frame.
+     same 3-degree clockwise tilt as frame
+     while preserving horizontal flip.
   */
   .faith-frame-angel {
     z-index: 8;
@@ -4785,7 +4798,8 @@ a {
     left: 1%;
     top: 18%;
 
-    transform: scaleX(-1);
+    transform: scaleX(-1) rotate(3deg);
     transform-origin: center;
   }
+
 }
