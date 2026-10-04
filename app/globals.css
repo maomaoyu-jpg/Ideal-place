@@ -4877,3 +4877,41 @@ a {
   transform-origin: center;
 }
 }
+/* =========================================================
+   MOBILE — FINAL COMPOSITION TUNING
+   ========================================================= */
+
+
+/* ARTICLE 02
+   Pull ONLY the lower geometric elements upward.
+   Statue / hand / crosshair remain untouched.
+*/
+
+.orbit-b {
+  top: 315px;
+}
+
+.faith-blue-block {
+  top: 445px;
+}
+
+
+/* ARTICLE 04
+   Keep frame + circle where they are.
+   Restore the angel as the dominant foreground element.
+*/
+
+.faith-frame-angel {
+  z-index: 8;
+
+  width: 88%;
+  max-height: none;
+
+  left: -13%;
+  top: 20%;
+
+  filter: none;
+
+  transform: scaleX(-1) rotate(-3deg);
+  transform-origin: center;
+}
