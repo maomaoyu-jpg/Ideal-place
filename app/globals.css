@@ -4621,96 +4621,171 @@ a {
 
 @media (max-width: 700px) {
 
-  /* ---------------- ARTICLE 02 ---------------- */
+  /* =======================================================
+     ARTICLE 02 — MOBILE
+     Preserve the approved iPad composition:
+     statue + hand overlap as one visual group.
+     ======================================================= */
 
   .faith-belief {
-    min-height: 1030px;
+    min-height: 940px;
   }
 
   .faith-belief-collage {
-    height: 670px;
+    height: 590px;
+
+    /*
+       Scale the whole approved composition together.
+       Internal relationships stay intact.
+    */
+    transform: scale(0.82);
+    transform-origin: 52% 42%;
   }
 
+
+  /* Statue — anchor of the composition */
   .faith-statue {
+    z-index: 5;
+
     width: 350px;
     max-width: 94vw;
 
-    left: 57%;
-    top: 68px;
+    left: 55%;
+    top: 62px;
 
     transform: translateX(-50%);
   }
 
+
+  /* Crosshair stays behind statue */
   .crosshair-a {
-    left: 57%;
-    top: 205px;
+    z-index: 4;
+
+    left: 55%;
+    top: 190px;
   }
 
+
   /*
-     Same gesture as iPad.
-     Hand remains foreground and overlaps statue.
+     Hand:
+     same orientation as approved iPad version;
+     moved upward so it overlaps the statue,
+     instead of becoming a separate lower image.
   */
   .faith-reach {
     z-index: 10;
 
-    width: 250px;
+    width: 270px;
+    max-height: none;
 
-    right: -25px;
-    top: 205px;
+    right: -18px;
+    top: 82px;
+
+    filter: none;
 
     transform: rotate(-90deg) scaleX(-1);
+    transform-origin: center;
   }
 
 
-  /* ---------------- ARTICLE 04 ---------------- */
+  /* Foreground sweep remains between statue and hand */
+  .orbit-b {
+    z-index: 7;
+  }
 
+
+  /* =======================================================
+     ARTICLE 04 — MOBILE
+     Treat circle + frame + angel as one composition.
+     Preserve final iPad direction / layer relationship.
+     ======================================================= */
+
+  .faith-frame-section {
+    min-height: 1000px;
+  }
+
+
+  /*
+     Entire composition slightly smaller than current live
+     mobile version and brought inward from right edge.
+  */
   .faith-frame-art {
-    width: 108vw;
-    height: 500px;
+    width: 94vw;
+    height: 455px;
 
-    right: -18vw;
+    right: -5vw;
     top: 555px;
   }
 
-  .faith-frame-blue {
-    width: 72%;
-    height: 72%;
 
-    left: 5%;
-    top: 7%;
+  /* Blue circle — shifted right, matching final iPad logic */
+  .faith-frame-blue {
+    z-index: 1;
+
+    width: 70%;
+    height: 70%;
+
+    left: 13%;
+    top: 8%;
 
     border-radius: 50%;
   }
 
-  .faith-frame-art::before {
-    width: 76%;
-    height: 76%;
 
-    left: 3%;
-    top: 6%;
+  /* Fine orbit follows the circle */
+  .faith-frame-art::before {
+    z-index: 2;
+
+    width: 74%;
+    height: 74%;
+
+    left: 11%;
+    top: 7%;
+
+    border-radius: 50%;
+
+    transform: rotate(-22deg);
   }
 
+
+  /* Wooden frame */
   .faith-frame {
     z-index: 5;
 
-    width: 68%;
-    height: 77%;
+    width: 66%;
+    height: 76%;
 
-    left: 23%;
-    top: 6%;
+    left: 22%;
+    top: 9%;
+
+    transform: rotate(3deg);
+    transform-origin: center;
   }
 
+
+  /*
+     Angel:
+     use the FINAL approved iPad relationship:
+     - above frame
+     - horizontally flipped
+     - visually tilted with frame
+     - extends through frame toward upper-left
+  */
   .faith-frame-angel {
     z-index: 8;
 
-    width: 78%;
+    width: 69%;
     max-height: none;
 
-    left: 3%;
-    top: 21%;
+    left: -1%;
+    top: 15%;
 
-    transform: scaleX(-1);
+    filter: none;
+
+    transform: scaleX(-1) rotate(-3deg);
+    transform-origin: center;
   }
+
 
   .faith-frame-art::after {
     display: none;
