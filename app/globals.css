@@ -4793,10 +4793,10 @@ a {
   .faith-frame-angel {
   z-index: 8;
 
-  width: 74%;
+  width: 69%;
 
   left: -3%;
-  top: 14%;
+  top: 12%;
 
   transform: scaleX(-1) rotate(-3deg);
   transform-origin: center;
