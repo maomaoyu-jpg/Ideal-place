@@ -4272,57 +4272,129 @@ a {
   .faith-nav { padding: 30px 24px 48px; gap: 20px; font-size: 6px; }
 }
 /* =========================================================
-   FAITH — TARGET MATCH CORRECTION
-   Based directly on supplied composition mockups
+   FAITH — COMPOSITION MASTER FIX
+   Replaces the deleted TARGET MATCH CORRECTION
    ========================================================= */
 
 
 /* =========================================================
-   ARTICLE 02
-   Statue + hand intentionally overlap.
-   HAND IS THE TOP LAYER.
+   HERO — RESTORE APPROVED VERSION
    ========================================================= */
 
-/* Statue:
-   larger and shifted right/down to match target */
-.faith-statue {
-  z-index: 5;
+/* FA / ITH uses the same serif language as the other
+   major editorial headings */
+.faith-hero-title h1 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 400;
+}
 
-  width: min(680px, 53vw);
-  max-height: 710px;
+/* Three-angels image:
+   original colour + horizontal flip */
+.faith-hero-angel {
+  filter: none;
+  transform: scaleX(-1);
+  transform-origin: center;
+}
 
-  left: 53%;
-  top: 58px;
 
-  transform: translateX(-50%);
+/* Other Faith imagery stays in original colour.
+   ARTICLE 01 hand is intentionally excluded. */
+.faith-statue,
+.faith-reach,
+.faith-feather,
+.faith-frame-angel {
   filter: none;
 }
 
 
-/* Foreground blue sweep remains between statue and hand */
+/* =========================================================
+   ARTICLE 02 — IMAGE OF THE DIVINE
+   Target = supplied approved mockup
+
+   Layer order:
+   background graphics
+   crosshair
+   statue
+   blue foreground sweep
+   reaching hand
+   ========================================================= */
+
+.faith-belief-collage {
+  position: relative;
+  isolation: isolate;
+}
+
+
+/* STATUE
+   Larger than original.
+   Shifted right + down.
+*/
+.faith-statue {
+  z-index: 5;
+
+  width: min(720px, 56vw);
+  max-height: 740px;
+
+  left: 55%;
+  top: 72px;
+
+  transform: translateX(-50%);
+
+  object-fit: contain;
+  object-position: center bottom;
+
+  filter: none;
+}
+
+
+/* Crosshair stays BEHIND statue */
+.faith-crosshair {
+  z-index: 4;
+}
+
+.crosshair-a {
+  left: 55%;
+  top: 245px;
+}
+
+
+/* Upper arc stays behind statue */
+.orbit-a {
+  z-index: 1;
+}
+
+
+/* Lower blue sweep crosses in front of statue
+   but remains behind the hand */
 .orbit-b {
   z-index: 7;
 }
 
 
-/* Hand:
-   - top foreground layer
-   - vertically flipped relative to current result
-   - overlaps statue
-   - enters from upper-right
+/* Horizontal archive lines */
+.faith-blue-block {
+  z-index: 3;
+}
 
-   rotate(-90deg) gives the overall diagonal orientation.
-   scaleX(-1) AFTER that rotation corresponds visually
-   to flipping the hand vertically in the final composition.
+
+/* REACHING HAND
+   IMPORTANT:
+   This preserves the now-correct vertical orientation.
+
+   The whole hand is moved UP + LEFT so it enters
+   from the upper-right and overlaps the statue.
+
+   Hand is the top image layer.
 */
 .faith-reach {
+  position: absolute;
   z-index: 10;
 
-  width: min(470px, 36vw);
+  width: min(520px, 40vw);
   max-height: none;
 
-  right: -2vw;
-  top: 205px;
+  right: 1vw;
+  top: 105px;
 
   object-fit: contain;
   object-position: center;
@@ -4335,46 +4407,99 @@ a {
 
 
 /* =========================================================
-   ARTICLE 04
-   Target:
-   frame behind angel;
-   angel horizontally flipped;
-   angel large and overlapping frame.
+   ARTICLE 04 — WHAT IS INSIDE THE FRAME?
+   Target = supplied approved mockup
+
+   Layer order:
+   blue background
+   fine line
+   wooden frame
+   angel ABOVE frame
    ========================================================= */
 
-.faith-frame-blue {
-  z-index: 1;
+.faith-frame-art {
+  position: absolute;
+  z-index: 3;
+
+  width: 58vw;
+  height: 760px;
+
+  right: -1vw;
+  top: 95px;
 }
 
 
-/* FRAME = middle layer */
+/* Blue field becomes the large circular field
+   from the mockup */
+.faith-frame-blue {
+  z-index: 1;
+
+  width: 68%;
+  height: 68%;
+
+  left: 10%;
+  top: 9%;
+
+  border-radius: 50%;
+
+  opacity: .72;
+}
+
+
+/* Fine orbital line */
+.faith-frame-art::before {
+  z-index: 2;
+
+  width: 72%;
+  height: 72%;
+
+  left: 8%;
+  top: 8%;
+
+  border-radius: 50%;
+
+  transform: rotate(-22deg);
+}
+
+
+/* WOODEN FRAME — middle image layer */
 .faith-frame {
   z-index: 5;
 
-  width: 67%;
+  width: 66%;
   height: 76%;
 
-  left: 22%;
-  top: 6%;
+  left: 25%;
+  top: 7%;
+
+  object-fit: contain;
 }
 
 
-/* ANGEL = foreground layer
-   Horizontal flip is scaleX(-1).
+/* ANGEL
+   Horizontally flipped.
+   ABOVE the wooden frame.
+   Large enough to cross the frame, but no longer gigantic.
+
+   Position follows mockup:
+   head left of frame centre;
+   torso extends toward lower-right.
 */
 .faith-frame-angel {
+  position: absolute;
   z-index: 8;
 
-  width: 88%;
-  max-height: none;
+  width: 72%;
+  max-height: 620px;
 
-  left: 8%;
+  left: 7%;
   right: auto;
 
-  top: 20%;
+  top: 22%;
   bottom: auto;
 
   object-fit: contain;
+
   filter: none;
 
   transform: scaleX(-1);
@@ -4382,61 +4507,107 @@ a {
 }
 
 
+/* Existing straight line is not part of target composition */
+.faith-frame-art::after {
+  display: none;
+}
+
+
 /* =========================================================
    IPAD
+   701–1180
    ========================================================= */
 
 @media (min-width: 701px) and (max-width: 1180px) {
 
-  /* ---------- ARTICLE 02 ---------- */
+  /* ---------------- ARTICLE 02 ---------------- */
 
-  .faith-statue {
-    width: 54vw;
-    max-height: 720px;
-
-    left: 53%;
-    top: 62px;
+  .faith-belief {
+    min-height: 1000px;
   }
 
+  .faith-belief-collage {
+    height: 665px;
+  }
+
+  /* Larger + right/down compared with previous live result */
+  .faith-statue {
+    width: 57vw;
+    max-height: 740px;
+
+    left: 55%;
+    top: 70px;
+  }
+
+  .crosshair-a {
+    left: 55%;
+    top: 245px;
+  }
+
+  /*
+     Hand overlaps the statue substantially.
+     Keep it above statue and blue sweep.
+  */
   .faith-reach {
     z-index: 10;
 
-    width: 39vw;
+    width: 43vw;
 
-    right: -4vw;
-    top: 190px;
+    right: 0;
+    top: 95px;
 
     transform: rotate(-90deg) scaleX(-1);
   }
 
 
-  /* ---------- ARTICLE 04 ---------- */
+  /* ---------------- ARTICLE 04 ---------------- */
 
   .faith-frame-art {
     width: 61vw;
     height: 720px;
 
-    right: -3vw;
+    right: -2vw;
     top: 105px;
+  }
+
+  .faith-frame-blue {
+    width: 70%;
+    height: 70%;
+
+    left: 8%;
+    top: 8%;
+  }
+
+  .faith-frame-art::before {
+    width: 74%;
+    height: 74%;
+
+    left: 6%;
+    top: 7%;
   }
 
   .faith-frame {
     z-index: 5;
 
-    width: 68%;
-    height: 77%;
+    width: 66%;
+    height: 76%;
 
-    left: 22%;
-    top: 6%;
+    left: 25%;
+    top: 7%;
   }
 
+  /*
+     Angel ABOVE frame.
+     Horizontal flip retained.
+  */
   .faith-frame-angel {
     z-index: 8;
 
-    width: 92%;
+    width: 74%;
+    max-height: 620px;
 
-    left: 8%;
-    top: 18%;
+    left: 6%;
+    top: 21%;
 
     transform: scaleX(-1);
   }
@@ -4445,68 +4616,103 @@ a {
 
 /* =========================================================
    MOBILE
-   Same relationships as the mockups:
-   no independent redesign.
+   Same visual relationship as iPad.
    ========================================================= */
 
 @media (max-width: 700px) {
 
-  /* ---------- ARTICLE 02 ---------- */
+  /* ---------------- ARTICLE 02 ---------------- */
+
+  .faith-belief {
+    min-height: 1030px;
+  }
+
+  .faith-belief-collage {
+    height: 670px;
+  }
 
   .faith-statue {
-    width: 340px;
-    max-width: 91vw;
+    width: 350px;
+    max-width: 94vw;
 
-    left: 56%;
-    top: 70px;
+    left: 57%;
+    top: 68px;
 
     transform: translateX(-50%);
   }
 
+  .crosshair-a {
+    left: 57%;
+    top: 205px;
+  }
+
   /*
-     Hand stays ABOVE statue and overlaps it.
-     Same final orientation as iPad.
+     Same gesture as iPad.
+     Hand remains foreground and overlaps statue.
   */
   .faith-reach {
     z-index: 10;
 
-    width: 230px;
+    width: 250px;
 
-    right: -46px;
-    top: 245px;
+    right: -25px;
+    top: 205px;
 
     transform: rotate(-90deg) scaleX(-1);
   }
 
 
-  /* ---------- ARTICLE 04 ---------- */
+  /* ---------------- ARTICLE 04 ---------------- */
 
   .faith-frame-art {
     width: 108vw;
     height: 500px;
 
-    right: -19vw;
-    top: 550px;
+    right: -18vw;
+    top: 555px;
+  }
+
+  .faith-frame-blue {
+    width: 72%;
+    height: 72%;
+
+    left: 5%;
+    top: 7%;
+
+    border-radius: 50%;
+  }
+
+  .faith-frame-art::before {
+    width: 76%;
+    height: 76%;
+
+    left: 3%;
+    top: 6%;
   }
 
   .faith-frame {
     z-index: 5;
 
-    width: 69%;
-    height: 78%;
+    width: 68%;
+    height: 77%;
 
-    left: 21%;
-    top: 5%;
+    left: 23%;
+    top: 6%;
   }
 
   .faith-frame-angel {
     z-index: 8;
 
-    width: 96%;
+    width: 78%;
+    max-height: none;
 
-    left: 5%;
-    top: 18%;
+    left: 3%;
+    top: 21%;
 
     transform: scaleX(-1);
+  }
+
+  .faith-frame-art::after {
+    display: none;
   }
 }
