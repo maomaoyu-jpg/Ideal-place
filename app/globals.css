@@ -4836,6 +4836,7 @@ a {
    ARTICLE 04 — iPad calibration
 --------------------------------------------------------- */
 
+
 @media (min-width: 701px) and (max-width: 1180px) {
 
   /* Blue circle — shifted right */
@@ -4880,7 +4881,7 @@ a {
 /* =========================================================
    MOBILE — FINAL COMPOSITION TUNING
    ========================================================= */
-
+@media (max-width: 700px) {
 
 /* ARTICLE 02
    Pull ONLY the lower geometric elements upward.
@@ -4915,3 +4916,4 @@ a {
   transform: scaleX(-1) rotate(-3deg);
   transform-origin: center;
 }
+   }
