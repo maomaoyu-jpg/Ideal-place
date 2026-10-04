@@ -4791,15 +4791,14 @@ a {
      while preserving horizontal flip.
   */
   .faith-frame-angel {
-    z-index: 8;
+  z-index: 8;
 
-    width: 74%;
+  width: 74%;
 
-    left: 1%;
-    top: 18%;
+  left: -3%;
+  top: 14%;
 
-    transform: scaleX(-1) rotate(3deg);
-    transform-origin: center;
-  }
-
+  transform: scaleX(-1) rotate(-3deg);
+  transform-origin: center;
+}
 }
