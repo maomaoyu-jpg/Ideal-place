@@ -4917,3 +4917,53 @@ a {
   transform-origin: center;
 }
    }
+/* =========================================================
+   GLOBAL — CONTEXT NOTE / FICTIONAL SETTING
+   ========================================================= */
+
+.global-context-note {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 6vw;
+
+  padding: 70px 7vw 80px;
+
+  border-top: 1px solid #aaa;
+  border-bottom: 1px solid #aaa;
+
+  background: #f2f1ed;
+}
+
+.global-context-label {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+
+  font-size: 9px;
+  letter-spacing: 0.22em;
+}
+
+.global-context-note p {
+  margin: 0;
+  max-width: 850px;
+
+  font-size: 12px;
+  line-height: 2;
+  color: #555;
+}
+
+@media (max-width: 700px) {
+  .global-context-note {
+    display: block;
+    padding: 55px 24px 65px;
+  }
+
+  .global-context-label {
+    margin-bottom: 32px;
+  }
+
+  .global-context-note p {
+    font-size: 11px;
+    line-height: 1.9;
+  }
+}
