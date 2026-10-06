@@ -70,7 +70,7 @@ export default function Education() {
 
         <div className="education-cover-image">
           <img
-            src="/images/world/winged/IMG_1449.JPG"
+            src="/images/world/winged/IMG_1449.jpeg"
             alt="書頁與植物"
           />
         </div>
@@ -112,7 +112,7 @@ export default function Education() {
 
         <div className="education-angels" aria-hidden="true">
           <img
-            src="/images/world/winged/IMG_1454.PNG"
+            src="/images/world/winged/IMG_1454.png"
             alt=""
             className="education-angels-image"
           />
@@ -277,14 +277,14 @@ export default function Education() {
 
         <div className="education-blackwing-bird">
           <img
-            src="/images/world/winged/IMG_1452.JPG"
+            src="/images/world/winged/IMG_1452.jpeg"
             alt="黑色鳥類影像"
           />
         </div>
 
         <div className="education-blackwing-photo">
           <img
-            src="/images/world/winged/IMG_1453.JPG"
+            src="/images/world/winged/IMG_1453.jpeg
             alt=""
           />
           <span>ARCHIVAL MATERIAL / NEGATIVE EXAMPLE</span>
