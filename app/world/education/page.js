@@ -179,9 +179,9 @@ export default function Education() {
           <span>03</span>
           <div>
             <h2>
-              不可質疑
+              不可質疑之
               <br />
-              之「真實」
+                  「真實」
             </h2>
             <p>
               這些內容並不總是以獨立課程存在。它們無處不在，散布於教材、聖典、教師的說明與學院日常之中，成為學生理解世界的基本前提。
@@ -221,7 +221,7 @@ export default function Education() {
           <h2>
             可以提問。
             <br />
-            在框架裡。
+                在框架裡。
           </h2>
           <strong>思考與引導</strong>
         </div>
