@@ -6320,3 +6320,85 @@ a {
     font-size: 6px;
   }
 }
+/* =========================================================
+   EDUCATION — IMAGE ADJUSTMENTS
+   01 enlarge angels / 05 remove bird + enlarge photo
+   ========================================================= */
+
+/* 01 — 天使素材大幅放大 */
+.education-angels {
+  width: 58vw;
+  height: 680px;
+  right: -3vw;
+  top: 75px;
+}
+
+.education-angels-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+
+/* 05 — 移除黑鳥 */
+.education-blackwing-bird {
+  display: none;
+}
+
+
+/* 05 — 下方黑羽反面教材圖片放大 */
+.education-blackwing-photo {
+  width: 48vw;
+  height: 455px;
+  right: 2vw;
+  top: 430px;
+}
+
+
+/* ---------- TABLET ---------- */
+
+@media (min-width: 701px) and (max-width: 1180px) {
+
+  /* 01 */
+  .education-angels {
+    width: 60vw;
+    height: 620px;
+    right: -5vw;
+    top: 80px;
+  }
+
+  /* 05 */
+  .education-blackwing-photo {
+    width: 50vw;
+    height: 430px;
+    right: 1vw;
+    top: 430px;
+  }
+}
+
+
+/* ---------- MOBILE ---------- */
+
+@media (max-width: 700px) {
+
+  /* 01 */
+  .education-angels {
+    width: 125vw;
+    height: 480px;
+    right: -18vw;
+    top: 450px;
+  }
+
+  /* 05 */
+  .education-blackwing-photo {
+    width: 92vw;
+    height: 330px;
+    right: -12vw;
+    top: 400px;
+  }
+
+  /* 圖放大後，讓下面文字不要撞上去 */
+  .education-blackwing-copy {
+    margin-top: 380px;
+  }
+}
