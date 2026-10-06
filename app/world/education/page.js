@@ -181,7 +181,7 @@ export default function Education() {
             <h2>
               不可質疑之
               <br />
-              &emsp;&emsp;「真實」
+              &emsp;&emsp;&emsp;「真實」
             </h2>
             <p>
               這些內容並不總是以獨立課程存在。它們無處不在，散布於教材、聖典、教師的說明與學院日常之中，成為學生理解世界的基本前提。
