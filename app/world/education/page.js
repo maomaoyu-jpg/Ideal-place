@@ -282,7 +282,7 @@ export default function Education() {
 
         <div className="education-blackwing-photo">
           <img
-            src="/images/world/winged/IMG_1453.jpeg
+            src="/images/world/winged/IMG_1453.jpeg"
             alt=""
           />
           <span>ARCHIVAL MATERIAL / NEGATIVE EXAMPLE</span>
